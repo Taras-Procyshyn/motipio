@@ -61,6 +61,27 @@
                                 <span></span>
 
                                 <div class="burger_menu__links">
+                                    <div class="lang lang_for_xs">
+                                        <span class="selected_lang"  data-lang="en">Eng</span>
+                                        <div class="conteiner_langs hidden">
+                                            <label  class="langs_item" >
+                                                Eng
+                                                <input  type="radio" value="en" class="en" name="lang">
+                                            </label>
+                        
+                                            
+                                            <label class="langs_item">
+                                                Укр
+                                                <input  type="radio" value="uk" class="uk"  name="lang">
+                                            </label>
+                                
+                                            
+                                            <label class="langs_item">
+                                                Рус
+                                            <input type="radio" value="ru" class="ru"  name="lang">
+                                            </label>
+                                        </div>
+                                    </div> 
                                     <ul class="burger_menu__navigation_link">
                                         <li><a href="./index.html">Home</a></li>
                                         <li><a href="./pro.html">PRO</a></li>
@@ -102,13 +123,17 @@
        <article>
            <section>
           <div class="doc container">
-                <div class="doc__title">
-                        <h1  class="terms_of_service__title" >Terms of service</h1>
+              <div class="doc__title">
+                    <h1  class="terms_of_service__title" >Terms of service</h1>
                         <div class="policy">
                             <span class="selected_policy"> United States of America</span>
                             <div class="conteiner_policy hidden">
-                                    <label  class="policy_item" >
-                                        United States of America
+                                <label  class="policy_item  hidden_xs" >
+                                    United States of America
+                                    <input  type="radio" value="usa" class="usa policy_item_input" name="policy">
+                                </label>
+                                <label  class="policy_item hidden_sm" >
+                                        USA
                                         <input  type="radio" value="usa" class="usa policy_item_input" name="policy">
                                     </label>
                                     <label class="policy_item">
@@ -117,10 +142,10 @@
                                     </label>
                             </div>
                      </div> 
+                     <p class="comment terms_of_service__comment">
+                         Updated: 30 September 2019
+                     </p>
                     </div>
-                    <p class="comment terms_of_service__comment">
-                        Updated: 30 September 2019
-                    </p>
                     <div class="terms_of_service__text">
                         <p class="doc__text t_of_s_p_1">
                           This Site Terms of Service Agreement (“Terms”) governs 
@@ -160,7 +185,29 @@
    </main>
    <footer>
         <div class="container">
-                <!DOCTYPE html>
+                <div class="footer xl">
+                        <div class="footer_xl">
+                               <div class="footer__navigation">
+                                       <nav class="footer__navigation_link">
+                                               <ul>
+                                                   <li><a href="./terms_of_service.html" class="footer_link_1">Therm of Service</a></li>
+                                                   <li>|</li>
+                                                   <li><a href="./privacy_policy.html" class="footer_link_2">Privacy Policy</a></li>
+                                                   <li>|</li>
+                                                   <li><a href="./faq.html" class="footer_link_3">FAQ</a></li>
+                                                   <li>|</li>
+                                                   <li><a href="./support.html" class="footer_link_4">Suport</a></li>
+                                               </ul>
+                                           </nav>     
+                                   </div>
+                                   <p class="footer_copyright">
+                                       Copyright 2019.
+                                   </p>
+                        </div>
+
+                       </div> 
+                    <di class="xs_n">
+                        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -170,33 +217,82 @@
 </head>
 <body>
     <div class="footer">
-        <div class="footer__navigation">
-            <nav class="footer__navigation_link">
-                    <ul>
-                        <li><a href="./terms_of_service.html"> Terms of Service</a></li>
-                        <li>|</li>
-                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
-                        <li>|</li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li>|</li>
-                        <li><a href="./support.html">Support</a></li>
-                    </ul>
-                </nav>   
-                <div class="footer__socials">
-                        <a href="https://www.facebook.com/motipioukraine" class="socials__facebook">
-                            <img src="./img/svg/Faseook_dark.svg" alt="">
-                        </a>
-                        <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram">
-                            <img src="./img/svg/Instagran_dark.svg" alt="">
-                        </a>
-                </div>    
+        <div class="footer_xl">
+                <div class="footer__navigation">
+                        <nav class="footer__navigation_link">
+                                <ul>
+                                    <li><a href="./terms_of_service.html"> Terms of Service</a></li>
+                                    <li>|</li>
+                                    <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                                    <li>|</li>
+                                    <li><a href="./faq.html">FAQ</a></li>
+                                    <li>|</li>
+                                    <li><a href="./support.html">Support</a></li>
+                                </ul>
+                            </nav>   
+                            <div class="footer__socials">
+                                    <a href="https://www.facebook.com/motipioukraine" class="socials__facebook">
+                                        <img src="./img/svg/Faseook_dark.svg" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram">
+                                        <img src="./img/svg/Instagran_dark.svg" alt="">
+                                    </a>
+                            </div>    
+                    </div>
+                    <p class="footer_copyright">
+                        © Copyright 2019.
+                    </p>
         </div>
-        <p class="footer_copyright">
-            Copyright 2019.
-        </p>
-    </div>  
+        <div class="footer_xs">
+                        <ul class="nav">
+                            <li><a href="./pro.html">PRO</a></li>
+                            <li><a href="https://medium.com/@motipioukraine">News</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                            <li><a href="./support.html">Support</a></li>
+                        </ul>
+                        <div class="socials">
+                                <a href="https://www.facebook.com/motipioukraine" class="socials__facebook">
+                                <img src="./img/svg/Faseook_dark.svg" alt="">
+                                </a>
+                                <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram">
+                                    
+                                <img src="./img/svg/Instagran_dark.svg" alt="">
+                                </a>
+                            </div>
+                        <ul class="footer_text">
+                            <li>
+                                <a href="./terms_of_service.html">
+                                    Terms of Service
+                                </a> 
+                            </li>
+                            <li>
+                                |
+                            </li>
+                            <li>
+                                <a href="./privacy_policy.html">
+                                    Privacy Policy
+                                </a> 
+                            </li>
+                            <li>
+                                |
+                            </li>
+                            <li>
+                                <a href="./cookie_policy.html">
+                                    Cookie Policy
+                                </a>
+                            </li>
+
+
+                            </ul>
+                        <p class="footer_copyright">
+                                Copyright 2019.
+                            </p>
+        </div>
+
+    </div>
 </body>
 </html>
+                    </di>
             </div>
    </footer>
 </body>
