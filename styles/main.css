@@ -446,6 +446,13 @@ ul {
   padding-right: 0.9375rem;
 }
 
+.doc_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -480,6 +487,10 @@ ol {
   opacity: 0;
   transition: opacity 0.2s linear;
   z-index: -2;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .header {
@@ -1874,6 +1885,10 @@ ol {
     max-width: 19.6875rem;
   }
 
+  .doc_container {
+    max-width: 19.6875rem;
+  }
+
   .xs {
     display: block;
   }
@@ -2587,6 +2602,7 @@ ol {
 
   .doc .cookie_title h1 {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .doc .cookie_title .comment {
@@ -2616,6 +2632,10 @@ ol {
     max-width: 31.875rem;
   }
 
+  .doc_container {
+    max-width: 31.875rem;
+  }
+
   .burger_menue .burger_menu__links .lang_for_xs {
     display: none;
   }
@@ -2634,6 +2654,10 @@ ol {
     max-width: 43.125rem;
   }
 
+  .doc_container {
+    max-width: 43.125rem;
+  }
+
   .about .viwe {
     width: calc(100% - 1.875rem);
   }
@@ -2643,10 +2667,18 @@ ol {
   .container {
     max-width: 58.125rem;
   }
+
+  .doc_container {
+    max-width: 58.125rem;
+  }
 }
 
 @media screen and (min-width: 75rem) {
   .container {
+    max-width: 69.375rem;
+  }
+
+  .doc_container {
     max-width: 69.375rem;
   }
 
@@ -3098,6 +3130,11 @@ ol {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 60px;
+    margin-top: 71px;
+  }
+
+  .doc .doc__title h1 {
+    text-align: left;
   }
 
   .doc .doc__title .policy {
@@ -3110,10 +3147,24 @@ ol {
     position: absolute;
     top: 70px;
     font-size: 22px;
+    left: 2px;
   }
 
   .doc .cookie_title {
+    margin-top: 71px;
     align-items: flex-start;
+  }
+
+  .doc .cookie_title h1 {
+    text-align: left;
+    line-height: 54px;
+  }
+
+  .doc .cookie_title .comment {
+    font-size: 22px;
+    line-height: 34px;
+    text-align: left;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
