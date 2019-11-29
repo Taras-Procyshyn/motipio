@@ -524,13 +524,13 @@ html {
 
 .lang .selected_lang {
   background: no-repeat url("../img/svg/Arr_for_select.svg");
-  background-size: 32%;
+  background-size: 25%;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   width: 60px;
   height: 40px;
   padding-right: 37px;
-  background-position: right 13px;
+  background-position: 50px 8px;
   cursor: pointer;
 }
 
@@ -752,8 +752,8 @@ html {
 }
 
 .header .for_doc {
-  left: 57%;
-  top: -8px;
+  position: relative;
+  left: 40%;
 }
 
 .title {
@@ -2694,7 +2694,7 @@ html {
   }
 
   .lang {
-    width: calc(33.33333% - 1.875rem);
+    left: -10%;
   }
 
   .lang .selected_lang {
