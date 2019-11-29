@@ -237,26 +237,30 @@ function setLang(lang) {
 var isCheckBurger = false;
 document.addEventListener('click', function (e) {
   if (e.target.tagName === 'A') return;
+  var width = document.documentElement.clientWidth;
 
   var burgers = _toConsumableArray(document.querySelectorAll(".burger_checkbox"));
 
   var checkBurger = burgers.find(function (burger) {
     return burger.checked === true;
-  }); // console.log(isCheckBurger)
+  });
+  var selectedLang = document.querySelector(".selected_lang").className;
+
+  if (width < 510) {
+    if (e.target.className === selectedLang) return;
+  }
 
   if (isCheckBurger) {
     isCheckBurger = false;
 
     if (checkBurger) {
       checkBurger.checked = false;
-      console.log(isCheckBurger);
     }
 
     ;
   } else {
     if (checkBurger) {
       isCheckBurger = true;
-      console.log(isCheckBurger);
     }
   }
 });
