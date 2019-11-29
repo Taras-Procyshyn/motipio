@@ -740,7 +740,7 @@ html {
   background: #FFFFFF;
 }
 
-.content {
+.cookie_content {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -749,7 +749,7 @@ html {
   align-items: center;
 }
 
-.content .text {
+.cookie_content .text {
   width: 100%;
   color: #000;
   font-size: 18px;
@@ -758,23 +758,23 @@ html {
   margin: 0;
 }
 
-.content .text h4 {
+.cookie_content .text h4 {
   font-weight: 400;
 }
 
-.content .text a {
+.cookie_content .text a {
   color: #0072FF;
 }
 
-.content .text a:hover {
+.cookie_content .text a:hover {
   text-decoration: underline;
 }
 
-.content .text p {
+.cookie_content .text p {
   margin: 0;
 }
 
-.content .cookie_toggle {
+.cookie_content .cookie_toggle {
   position: relative;
   top: 5px;
   cursor: pointer;
