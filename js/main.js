@@ -86,6 +86,33 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/modules/cookie/cookie.js":
+/*!*********************************************!*\
+  !*** ./src/blocks/modules/cookie/cookie.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+setTimeout(cookie, 300);
+
+function cookie() {
+  var modal = document.querySelector(".cookie");
+  var cookie = window.sessionStorage.getItem("cookie");
+  if (cookie) return;
+  modal.classList.remove("hidden");
+  modal.classList.add("show");
+  var toggle = modal.querySelector(".cookie_toggle");
+  console.log(toggle);
+  toggle.addEventListener('click', function () {
+    window.sessionStorage.setItem("cookie", true);
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    modal.remove();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/blocks/modules/footer/footer.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/footer/footer.js ***!
@@ -417,6 +444,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/cookie/cookie */ "./src/blocks/modules/cookie/cookie.js");
+/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 

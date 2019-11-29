@@ -732,6 +732,54 @@ html {
   font-size: 14px;
 }
 
+.cookie {
+  position: fixed;
+  bottom: 0;
+  height: 14.8vh;
+  width: 100vw;
+  background: #FFFFFF;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 1244px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.content .text {
+  width: 100%;
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.337647px;
+  margin: 0;
+}
+
+.content .text h4 {
+  font-weight: 400;
+}
+
+.content .text a {
+  color: #0072FF;
+}
+
+.content .text a:hover {
+  text-decoration: underline;
+}
+
+.content .text p {
+  margin: 0;
+}
+
+.content .cookie_toggle {
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+}
+
 .burger_menu_white span {
   background: white;
 }
