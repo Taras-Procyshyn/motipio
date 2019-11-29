@@ -1548,8 +1548,6 @@ html {
 .receive_requests .viwe .contein_img {
   width: 120%;
   height: 150%;
-  left: -20%;
-  top: -34%;
   position: absolute;
   background: no-repeat url("../img/how_to_resive_request.png");
   background-position: right;
@@ -3051,6 +3049,11 @@ html {
     order: 1;
     width: 50%;
     height: 100%;
+  }
+
+  .receive_requests .viwe .contein_img {
+    left: -20%;
+    top: -34%;
   }
 
   .receive_requests .description {
