@@ -307,7 +307,7 @@ var En = (_En = {
   // support
   support_title: "Support",
   support_text_1: "Hi friend 👋 , if you got to this page for a reason, you probably have a question.",
-  support_text_2: " We will be happy to help with your questions, and\n                    resolve it as soon as possible for you. But before\n                    that, if you still decide to send us a request, \n                    be sure that you looked at these pages on which \n                    there is all the necessary information <a href=\"#\">Frequently\n                    Asked Questions</a> & <a href=\"#\">Terms of Service.</a> ",
+  support_text_2: " We will be happy to help with your questions, and\n                    resolve it as soon as possible for you. But before\n                    that, if you still decide to send us a request, \n                    be sure that you looked at these pages on which \n                    there is all the necessary information <a href=\"./faq.html\">Frequently\n                    Asked Questions</a> & <a href=\"./terms_of_service.html\">Terms of Service.</a>",
   support_text_3: "If you didn\u2019t find an answer there, send us a request\n                    by selecting the appropriate category of your question.",
   support_text_4: "  We will try to answer and resolve your question as soon as possible.",
   support_text_5: "Thanks, Motipio team.",

@@ -1525,13 +1525,11 @@ html {
   background: no-repeat url("../img/cash_symbol.png");
 }
 
-#receive_requests,
-#let_join {
+#receive_requests {
   margin-top: 11vh;
-  background: no-repeat url("../img/how_to_resive_request.png"), linear-gradient(180deg, #0C1723 64.05%, rgba(0, 0, 0, 0.5) 125.01%), #0C1723;
-  background-size: contain;
-  background-position: 28%;
-  height: 80.3vh;
+  background: linear-gradient(180deg, #0C1723 64.05%, rgba(0, 0, 0, 0.5) 125.01%), #0C1723;
+  background-size: 33%;
+  background-position: 30px;
   color: white;
 }
 
@@ -1541,6 +1539,21 @@ html {
   box-sizing: border-box;
   height: 100%;
   padding-top: 13.6vh;
+}
+
+.receive_requests .viwe {
+  position: relative;
+}
+
+.receive_requests .viwe .contein_img {
+  width: 120%;
+  height: 150%;
+  left: -20%;
+  top: -34%;
+  position: absolute;
+  background: no-repeat url("../img/how_to_resive_request.png");
+  background-position: right;
+  background-size: contain;
 }
 
 .receive_requests .description {
@@ -1583,6 +1596,7 @@ html {
 #let_join {
   background: linear-gradient(180deg, #0A121A 0%, #000000 97.44%);
   margin-top: 0;
+  color: white;
   padding-top: 11vh;
 }
 
@@ -1687,6 +1701,10 @@ html {
 
 .footer_dark .footer__socials a {
   padding: 25px;
+}
+
+.darck_bg {
+  background: linear-gradient(180deg, #0C1723 64.05%, rgba(0, 0, 0, 0.5) 125.01%), #0C1723;
 }
 
 .faq_title {
@@ -2340,8 +2358,7 @@ html {
     top: -10px;
   }
 
-  #receive_requests,
-  #let_join {
+  #receive_requests {
     box-sizing: border-box;
     background-position: bottom;
     height: 997px;
@@ -2360,7 +2377,13 @@ html {
 
   .receive_requests .viwe {
     height: 300px;
+    width: 100%;
     order: 2;
+  }
+
+  .receive_requests .viwe .contein_img {
+    top: -4.5%;
+    left: -10%;
   }
 
   .receive_requests .description {
@@ -3010,8 +3033,7 @@ html {
     top: -30px;
   }
 
-  #receive_requests,
-  #let_join {
+  #receive_requests {
     box-sizing: border-box;
     background-position: 120px;
     height: 80.3vh;
