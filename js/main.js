@@ -93,12 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-setTimeout(cookie, 300);
+setTimeout(cookie, 5000);
 
 function cookie() {
   var modal = document.querySelector(".cookie");
   var cookie = window.sessionStorage.getItem("cookie");
-  if (cookie) return;
+
+  if (cookie) {
+    modal.remove();
+    return;
+  }
+
+  ;
   modal.classList.remove("hidden");
   modal.classList.add("show");
   var toggle = modal.querySelector(".cookie_toggle");
@@ -273,7 +279,7 @@ document.addEventListener('click', function (e) {
   });
   var selectedLang = document.querySelector(".selected_lang").className;
 
-  if (width < 510) {
+  if (width < 992) {
     if (e.target.className === selectedLang) return;
   }
 
@@ -291,6 +297,24 @@ document.addEventListener('click', function (e) {
     }
   }
 });
+var burgers = document.querySelectorAll(".burger_menue");
+burgers.forEach(function (burger) {
+  burger.addEventListener('click', function (e) {
+    var chxbox = e.target.checked;
+
+    if (chxbox) {
+      burgers.forEach(function (burger) {
+        if (!burger.querySelector("input").checked) {
+          burger.style.visibility = "hidden";
+        }
+      });
+    } else {
+      burgers.forEach(function (burger) {
+        burger.style.visibility = "visible";
+      });
+    }
+  });
+});
 
 /***/ }),
 
@@ -303,11 +327,7 @@ document.addEventListener('click', function (e) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var _En;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var En = (_En = {
+var En = {
   // header 
   burg_home: "Home",
   burg_pro: "PRO",
@@ -367,11 +387,73 @@ var En = (_En = {
   action_item_h_3: "Set a payout method",
   action_item_h4_3: "Partnering with Payoneer",
   action_item_p_3: "Great list of ways to withdrawals your earnigs\n                    with low fees on transfers to card,\n                    bank and other. <a href=\"#\">Learn more about</a>",
-  hycw_title: "How you can work on Montipio platform",
+  hycw_title: "How you can work on Motipio platform",
   benefit_item_h_1: "Consulting service",
-  benefit_item_p_1: "So strongly and metaphysically did\n                    I conceive of my situation then,\n                    that while earnestly watching his motions,\n                    I seemed distinctly to perceive that my own\n                    individuality was now merged in a joint stock\n                    company of two.",
-  benefit_item_h_2: "Communication with fans"
-}, _defineProperty(_En, "benefit_item_p_1", "  But this was not the only jamming jeopardy\n                    he was exposed to. Unappalled by the massacre\n                    made upon them during the night, the sharks now\n                    freshly and more keenly allured by the before pent\n                    blood which began."), _defineProperty(_En, "benefit_item_h_3", "Mentoring and Coaching"), _defineProperty(_En, "benefit_item_p_3", "I have hinted that I would often jerk poor Queequeg\n                    from between the whale and the ship\u2014where he would\n                    occasionally fall, from the incessant rolling and\n                    swaying of both."), _defineProperty(_En, "benefit_item_h_4", "Charity and help"), _defineProperty(_En, "benefit_item_p_4", "So that for better or for worse, we two, for the time,\n                    were wedded; and should poor Queequeg sink to rise no\n                    more, then both usage and honour demanded."), _defineProperty(_En, "benefit_item_p_5", " All cases which were written above by Motipio team, its only examples."), _defineProperty(_En, "benefit_item_p_6", "You have the ability to set your own way of gaming, your request details, and\n                    others."), _defineProperty(_En, "how_earn_title", "How much you can charge per request"), _defineProperty(_En, "how_earn_h_1", "Dozens and Hundreds"), _defineProperty(_En, "how_earn_p_1", "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.\n                Donec viverra eleifend lacus, vitae ullamcorper metus.\n                Sed sollicitudin ipsum quis nunc sollicitudin ultrices.\n                Donec euismod scelerisque ligula."), _defineProperty(_En, "how_earn_h_2", "Hundreds and Thousands"), _defineProperty(_En, "how_earn_p_2", "Banjo tote bag bicycle rights, High Life sartorial\n                cray craft beer whatever street art fap. Hashtag\n                typewriter banh mi, squid keffiyeh High Life\n                Brooklyn twee craft bee."), _defineProperty(_En, "how_earn_p_3", "All cases which were written above by Motipio team, its only examples."), _defineProperty(_En, "how_earn_p_4", "You have the ability to set your own price of request and how much you decide to\n                    charge."), _defineProperty(_En, "receive_requests_title", " How to receive request"), _defineProperty(_En, "receive_requests_item_1", "Complete profile and go to Online;"), _defineProperty(_En, "receive_requests_item_2", "Share info on your social media;"), _defineProperty(_En, "receive_requests_item_3", "Make more earnings by requests;"), _defineProperty(_En, "receive_requests_text", " Use your social media, for attracting your\n                            audience, followers or fans to founding you\n                            on Motipio by @username of name searching.\n                            Create stories or post about it, with link\n                            what following to Motipio <a href=\"./index.html\">main page</a> or\n                            <a href=\"./download.html\">download</a> page."), _defineProperty(_En, "let_join_title", "Like it? Let's join to us, now!"), _defineProperty(_En, "tags__description", "Thanks for interesting in Motipio, and we know that\n                        you are an RPO with great skills which need in a Whole World.\n                        Apply a form, and join to huge community,\n                        for making our world a better place for leaving for humans."), _defineProperty(_En, "tag__item_1", "Entrepreneurship"), _defineProperty(_En, "tag__item_2", "Finance & Investing"), _defineProperty(_En, "tag__item_3", "Beauty & Fashion"), _defineProperty(_En, "tag__item_4", "Sport & Health"), _defineProperty(_En, "tag__item_5", "Media & Social Media"), _defineProperty(_En, "tag__item_6", "More..."), _defineProperty(_En, "join_to_us_btn_2", "Join to Motipio as PRO, now!"), _defineProperty(_En, "privacy_policy_title", "Privacy Policy"), _defineProperty(_En, "rivacy_policy_comment", " Updated: 30 September 2019"), _defineProperty(_En, "cookie_policy_title", "Cookie Policy"), _defineProperty(_En, "cookie_policy_comment", " Updated: 30 September 2019"), _defineProperty(_En, "faq_title", "Frequently Asked Questions"), _defineProperty(_En, "faq_h2_1", "About Motipio"), _defineProperty(_En, "faq_h2_2", "Request"), _defineProperty(_En, "faq_q_1", "Q: What is Motipio?"), _defineProperty(_En, "faq_a_1", "                        A: Motipio is a platform where people can send\n    a request to PRO\u2019s people. Our mission is to\n    give to people a great solution, for upgrading\n    themselves, collaborating, connecting and making\n    our world a better place to live."), _defineProperty(_En, "faq_q_2", "Q: How do I contact the Motipio team?"), _defineProperty(_En, "faq_a_2", "                        A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n    and attending to a whale, there is much running\n    backwards and forwards among the crew. Now hands\n    are wanted here, and then again hands are wanted\n    there. There is no staying in any one place; for\n    at one and the same time everything has to be done\n    everywhere. It is much the same with him who endeavors\n    the desc."), _defineProperty(_En, "faq_q_3", "Q: What is Motipio?"), _defineProperty(_En, "faq_a_3", "                           A: Motipio is a platform where people can send a \n    request to PRO\u2019s people. Our mission is to give to\n    people a great solution, for upgrading themselves,\n    collaborating, <a href=\"#\">connecting</a>  and making our world a better\n    place to live."), _defineProperty(_En, "faq_q_4", "Q: How do I contact the Motipio team?"), _defineProperty(_En, "faq_a_4", "                            A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n    and attending to a whale, there is much running\n    backwards and forwards among the crew. Now hands\n    are wanted here, and then again hands are wanted\n    there. There is no staying in any one place; for\n    at one and the same time everything has to be done\n    everywhere. It is much the same with him who endeavors\n    the desc."), _defineProperty(_En, "faq_q_5", "Q: How do I contact the Motipio team?"), _defineProperty(_En, "faq_a_5", "A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n                and attending to a whale, there is much running\n                backwards and forwards among the crew. Now hands\n                are wanted here, and then again hands are wanted\n                there. There is no staying in any one place; for\n                at one and the same time everything has to be done\n                everywhere. It is much the same with him who endeavors\n                the desc."), _defineProperty(_En, "footer_link_1", "Terms of service"), _defineProperty(_En, "footer_link_2", "Privacy Policy"), _defineProperty(_En, "footer_link_3", "FAQ"), _defineProperty(_En, "footer_link_4", "Support"), _defineProperty(_En, "footer_copyright", "Copyright 2019."), _En);
+  benefit_item_p_1: "So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two.",
+  benefit_item_h_2: "Mentoring and Coaching",
+  benefit_item_p_2: "I have hinted that I would often jerk poor Queequeg from between the whale and the ship\u2014where he would occasionally fall, from the incessant rolling and swaying of both.",
+  benefit_item_h_3: "Communication with fans",
+  benefit_item_p_3: "But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began.",
+  benefit_item_h_4: "Charity and help",
+  benefit_item_p_4: "So that for better or for worse, we two, for the time, were wedded; and should poor Queequeg sink to rise no more, then both usage and honour demanded.",
+  benefit_item_p_5: " All cases which were written above by Motipio team, its only examples.",
+  benefit_item_p_6: "You have the ability to set your own way of gaming, your request details, and\n                    others.",
+  how_earn_title: "How much you can charge per request",
+  how_earn_h_1: "Dozens and Hundreds",
+  how_earn_p_1: "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.\n                Donec viverra eleifend lacus, vitae ullamcorper metus.\n                Sed sollicitudin ipsum quis nunc sollicitudin ultrices.\n                Donec euismod scelerisque ligula.",
+  how_earn_h_2: "Hundreds and Thousands",
+  how_earn_p_2: "Banjo tote bag bicycle rights, High Life sartorial\n                cray craft beer whatever street art fap. Hashtag\n                typewriter banh mi, squid keffiyeh High Life\n                Brooklyn twee craft bee.",
+  how_earn_p_3: "All cases which were written above by Motipio team, its only examples.",
+  how_earn_p_4: "You have the ability to set your own price of request and how much you decide to\n                    charge.",
+  receive_requests_title: " How to receive requests",
+  receive_requests_item_1: "Complete profile and go to Online;",
+  receive_requests_item_2: "Share info on your social media;",
+  receive_requests_item_3: "Make more earnings by requests;",
+  receive_requests_text: " Use your social media, for attracting your\n                            audience, followers or fans to founding you\n                            on Motipio by @username of name searching.\n                            Create stories or post about it, with link\n                            what following to Motipio <a href=\"./index.html\">main page</a> or\n                            <a href=\"./download.html\">download</a> page.",
+  let_join_title: "Like it? Let's join to us, now!",
+  tags__description: "Thanks for interesting in Motipio, and we know that\n                        you are an RPO with great skills which need in a Whole World.\n                        Apply a form, and join to huge community,\n                        for making our world a better place for leaving for humans.",
+  tag__item_1: "Entrepreneurship",
+  tag__item_2: "Finance & Investing",
+  tag__item_3: "Beauty & Fashion",
+  tag__item_4: "Sport & Health",
+  tag__item_5: "Media & Social Media",
+  tag__item_6: "More...",
+  join_to_us_btn_2: "Join to Motipio as PRO, now!",
+  // privacy policy
+  privacy_policy_title: "Privacy Policy",
+  rivacy_policy_comment: " Updated: 30 September 2019",
+  //cookie
+  cookie_policy_title: "Cookie Policy",
+  cookie_policy_comment: " Updated: 30 September 2019",
+  //faq
+  faq_title: "Frequently Asked Questions",
+  faq_h2_1: "About Motipio",
+  faq_h2_2: "Request",
+  faq_q_1: "Q: What is Motipio?",
+  faq_a_1: "                        A: Motipio is a platform where people can send\n    a request to PRO\u2019s people. Our mission is to\n    give to people a great solution, for upgrading\n    themselves, collaborating, connecting and making\n    our world a better place to live.",
+  faq_q_2: "Q: How do I contact the Motipio team?",
+  faq_a_2: "                        A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n    and attending to a whale, there is much running\n    backwards and forwards among the crew. Now hands\n    are wanted here, and then again hands are wanted\n    there. There is no staying in any one place; for\n    at one and the same time everything has to be done\n    everywhere. It is much the same with him who endeavors\n    the desc.",
+  faq_q_3: "Q: What is Motipio?",
+  faq_a_3: "                           A: Motipio is a platform where people can send a \n    request to PRO\u2019s people. Our mission is to give to\n    people a great solution, for upgrading themselves,\n    collaborating, <a href=\"#\">connecting</a>  and making our world a better\n    place to live.",
+  faq_q_4: "Q: How do I contact the Motipio team?",
+  faq_a_4: "                            A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n    and attending to a whale, there is much running\n    backwards and forwards among the crew. Now hands\n    are wanted here, and then again hands are wanted\n    there. There is no staying in any one place; for\n    at one and the same time everything has to be done\n    everywhere. It is much the same with him who endeavors\n    the desc.",
+  faq_q_5: "Q: How do I contact the Motipio team?",
+  faq_a_5: "A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n                and attending to a whale, there is much running\n                backwards and forwards among the crew. Now hands\n                are wanted here, and then again hands are wanted\n                there. There is no staying in any one place; for\n                at one and the same time everything has to be done\n                everywhere. It is much the same with him who endeavors\n                the desc.",
+  // footer
+  footer_link_1: "Terms of service",
+  footer_link_2: "Privacy Policy",
+  footer_link_3: "FAQ",
+  footer_link_4: "Support",
+  footer_copyright: "Copyright 2019.",
+  // chat 
+  chat_msg_user_1: "Hi Steve! How to be productive and positive at the same time? What a secret?!",
+  chat_msg_steve_1: "\uD83D\uDC4B Oh! What a great and deep question! Hope that my answers will help you. But first...",
+  chat_msg_steve_2: "Could you tell me something about yourself?",
+  chat_msg_steve_3: "\u201CBe productive\u201D, could you explain. What does mean to you these words?",
+  chat_msg_user_2: "Sure! Also, thx that you accepted request\u2026\uD83D\uDE0A",
+  chat_msg_steve_4: "Thank you too, that having me. I really love helping people \uD83E\uDD17",
+  chat_msg_user_3: "Typing..."
+};
 /* harmony default export */ __webpack_exports__["default"] = (En);
 
 /***/ }),
@@ -462,96 +544,23 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _selectPolicy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./selectPolicy */ "./src/js/selectPolicy.js");
-/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./smoothScrol */ "./src/js/smoothScrol.js");
-/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_smoothScrol__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./smoothScrol */ "./src/js/smoothScrol.js");
+/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_smoothScrol__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./showFeature */ "./src/js/showFeature.js");
+/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_showFeature__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
 /***/ }),
 
-/***/ "./src/js/policyLang/uk.js":
-/*!*********************************!*\
-  !*** ./src/js/policyLang/uk.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/js/showFeature.js":
+/*!*******************************!*\
+  !*** ./src/js/showFeature.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Uk = {
-  // terms of service
-  t_of_s_p_1: "\u0426\u044F \u0423\u0433\u043E\u0434\u0430 \u043F\u0440\u043E \u043D\u0430\u0434\u0430\u043D\u043D\u044F \u043F\u043E\u0441\u043B\u0443\u0433 \u043D\u0430 \u0421\u0430\u0439\u0442\u0456 (\"\u0423\u043C\u043E\u0432\u0438\") \u0440\u0435\u0433\u0443\u043B\u044E\u0454 \u0432\u0430\u0448\u0435 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u0430\u043D\u043D\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0438 \u0440\u0438\u043D\u043A\u0443 Motipio \u2122 \u0447\u0435\u0440\u0435\u0437 \u043F\u043E\u0441\u043B\u0443\u0433\u0438, \u044F\u043A\u0456 \u043C\u0438 \u043D\u0430\u0434\u0430\u0454\u043C\u043E (\u0443 \u0441\u0443\u043A\u0443\u043F\u043D\u043E\u0441\u0442\u0456 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442, \u0434\u043E\u0434\u0430\u0442\u043E\u043A \u0442\u0430 \u043F\u043E\u0441\u043B\u0443\u0433\u0438, \u044F\u043A\u0456 \u043D\u0430\u0437\u0438\u0432\u0430\u044E\u0442\u044C\u0441\u044F \u043D\u0430\u0448\u0438\u043C \"\u0421\u0430\u0439\u0442\u043E\u043C\"). \"\u0412\u0438\" \u0441\u0442\u043E\u0441\u0443\u0454\u0442\u044C\u0441\u044F \u0432\u0430\u0441 \u044F\u043A \u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430 \u043D\u0430\u0448\u043E\u0433\u043E \u0421\u0430\u0439\u0442\u0443.",
-  t_of_s_p_2: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443. \u0411\u0456\u043E\u0434\u0438\u0437\u0435\u043B\u044C\u043D\u0438\u0439 \u043D\u0430\u0440\u0432\u0430\u043B \u0411\u0430\u0440\u043E\u0434\u0436\u043E \u0422\u043E\u043D\u043A\u0441",
-  t_of_s_p_3: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u043F\u0440\u0438\u0439\u043C\u0430\u044E\u0447\u0438 \u0442\u043E\u0439 \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043B\u0435\u043D\u0438\u0439 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457",
-  t_of_s_p_4: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443. \u0411\u0456\u043E\u0434\u0438\u0437\u0435\u043B\u044C\u043D\u0438\u0439 \u043D\u0430\u0440\u0432\u0430\u043B \u0411\u0430\u0440\u043E\u0434\u0436\u043E \u0422\u043E\u043D\u043A\u0441.",
-  t_of_s_p_5: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u0431\u0435\u0440\u0443\u0447\u0438 \u0446\u044E \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043D\u0443 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457.",
-  t_of_s_p_6: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443. \u0411\u0456\u043E\u0434\u0438\u0437\u0435\u043B\u044C\u043D\u0438\u0439 \u043D\u0430\u0440\u0432\u0430\u043B \u0411\u0430\u0440\u043E\u0434\u0436\u043E \u0422\u043E\u043D\u043A\u0441.",
-  t_of_s_p_7: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u0431\u0435\u0440\u0443\u0447\u0438 \u0446\u044E \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043D\u0443 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457.",
-  t_of_s_p_8: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E.",
-  t_of_s_p_9: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E.",
-  // privacy
-  p_p_1: "\u0426\u044F \u0423\u0433\u043E\u0434\u0430 \u043F\u0440\u043E \u043D\u0430\u0434\u0430\u043D\u043D\u044F \u043F\u043E\u0441\u043B\u0443\u0433 \u043D\u0430 \u0421\u0430\u0439\u0442\u0456 (\"\u0423\u043C\u043E\u0432\u0438\") \u0440\u0435\u0433\u0443\u043B\u044E\u0454 \u0432\u0430\u0448\u0435 \u0432\u0438\u043A\u043E\u0440\u0438\u0441\u0442\u0430\u043D\u043D\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0438 \u0440\u0438\u043D\u043A\u0443 Motipio \u2122 \u0447\u0435\u0440\u0435\u0437 \u043F\u043E\u0441\u043B\u0443\u0433\u0438, \u044F\u043A\u0456 \u043C\u0438 \u043D\u0430\u0434\u0430\u0454\u043C\u043E (\u0443 \u0441\u0443\u043A\u0443\u043F\u043D\u043E\u0441\u0442\u0456 \u0432\u0435\u0431-\u0441\u0430\u0439\u0442, \u0434\u043E\u0434\u0430\u0442\u043E\u043A \u0442\u0430 \u043F\u043E\u0441\u043B\u0443\u0433\u0438, \u044F\u043A\u0456 \u043D\u0430\u0437\u0438\u0432\u0430\u044E\u0442\u044C\u0441\u044F \u043D\u0430\u0448\u0438\u043C \"\u0421\u0430\u0439\u0442\u043E\u043C\"). \"\u0412\u0438\" \u0441\u0442\u043E\u0441\u0443\u0454\u0442\u044C\u0441\u044F \u0432\u0430\u0441 \u044F\u043A \u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430 \u043D\u0430\u0448\u043E\u0433\u043E \u0421\u0430\u0439\u0442\u0443.",
-  p_p_2: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443. \u0411\u0456\u043E\u0434\u0438\u0437\u0435\u043B\u044C\u043D\u0438\u0439 \u043D\u0430\u0440\u0432\u0430\u043B \u0411\u0430\u0440\u043E\u0434\u0436\u043E \u0422\u043E\u043D\u043A\u0441",
-  p_p_3: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u043F\u0440\u0438\u0439\u043C\u0430\u044E\u0447\u0438 \u0442\u043E\u0439 \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043B\u0435\u043D\u0438\u0439 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457",
-  p_p_4: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u043F\u0440\u0438\u0439\u043C\u0430\u044E\u0447\u0438 \u0442\u043E\u0439 \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043B\u0435\u043D\u0438\u0439 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457",
-  p_p_5: "\u0411\u0443\u0434\u0443\u0447\u0438 \u0434\u0438\u043A\u0443\u043D\u043E\u043C-\u0434\u0438\u043A\u0443\u043D\u043E\u043C, \u0442\u043E\u0431\u0442\u043E \u043B\u044E\u0434\u0438\u043D\u043E\u044E, \u044F\u043A\u0430 \u0432\u0438\u0442\u044F\u0433\u043D\u0443\u043B\u0430 \u043B\u0443\u043A-\u0432\u0435\u0441\u043B\u043E \u0443 \u0441\u0432\u043E\u0454\u043C\u0443 \u0447\u043E\u0432\u043D\u0456 (\u0434\u0440\u0443\u0433\u0438\u0439 - \u0432\u043F\u0435\u0440\u0435\u0434), - \u043C\u0456\u0439 \u0432\u0435\u0441\u0435\u043B\u0438\u0439 \u043E\u0431\u043E\u0432'\u044F\u0437\u043E\u043A \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0442\u0438 \u0439\u043E\u0433\u043E, \u0431\u0435\u0440\u0443\u0447\u0438 \u0446\u044E \u0432\u0430\u0436\u043A\u043E \u0441\u043A\u0440\u0435\u043C\u0431\u043D\u0443 \u0441\u0443\u0442\u0438\u0447\u043A\u0443 \u043D\u0430 \u0441\u043F\u0438\u043D\u0456 \u043C\u0435\u0440\u0442\u0432\u043E\u0433\u043E \u043A\u0438\u0442\u0430. \u0412\u0438 \u0431\u0430\u0447\u0438\u043B\u0438 \u0456\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0438\u0445 \u0445\u043B\u043E\u043F\u0446\u0456\u0432-\u043E\u0440\u0433\u0430\u043D\u0456\u0432, \u0449\u043E \u0442\u0440\u0438\u043C\u0430\u044E\u0442\u044C \u0434\u043E\u0432\u0433\u0438\u0439 \u0448\u043D\u0443\u0440 \u0442\u0430\u043D\u0446\u044E\u0432\u0430\u043B\u044C\u043D\u043E\u0457 \u043C\u0430\u0432\u043F\u0438. \u041F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A, \u0437 \u043A\u0440\u0443\u0442\u043E\u0457 \u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u043A\u043E\u0440\u0430\u0431\u043B\u044F, \u044F \u0442\u0440\u0438\u043C\u0430\u0432 \u041A\u0432\u0456\u043A\u0435\u0433\u0430 \u0442\u0430\u043C, \u0443 \u043C\u043E\u0440\u0456, \u0442\u0438\u043C, \u0449\u043E \u0442\u0435\u0445\u043D\u0456\u0447\u043D\u043E \u043D\u0430\u0437\u0438\u0432\u0430\u0454\u0442\u044C\u0441\u044F \u0432 \u0440\u0438\u0431\u043D\u043E\u043C\u0443 \u0433\u043E\u0441\u043F\u043E\u0434\u0430\u0440\u0441\u0442\u0432\u0456 \u043C\u0430\u0432\u043F\u043E\u044E \u043C\u043E\u0442\u0443\u0437\u043A\u0443, \u043F\u0440\u0438\u043A\u0440\u0456\u043F\u043B\u0435\u043D\u0443 \u0434\u043E \u043C\u0456\u0446\u043D\u043E\u0457 \u0441\u043C\u0443\u0433\u0438 \u043F\u043E\u043B\u043E\u0442\u043D\u0430, \u043F\u0456\u0434\u043F\u0435\u0440\u0435\u0437\u0430\u043D\u043E\u0457 \u043D\u0430\u0432\u043A\u043E\u043B\u043E \u0442\u0430\u043B\u0456\u0457.",
-  p_p_6: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443. \u0411\u0456\u043E\u0434\u0438\u0437\u0435\u043B\u044C\u043D\u0438\u0439 \u043D\u0430\u0440\u0432\u0430\u043B \u0411\u0430\u0440\u043E\u0434\u0436\u043E \u0422\u043E\u043D\u043A\u0441.",
-  p_p_7: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E \u0442\u044C\u0444\u0443-\u0443\u043C\u0430\u043C\u0456, \u043C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u0456 \u0434\u0436\u0438\u043D\u0441\u043E\u0432\u0456 \u0448\u043E\u0440\u0442\u0438 Wes Anderson \u0432\u0438\u0441\u043E\u043A\u043E\u0433\u043E \u0434\u0440\u0443\u043A\u0443.",
-  p_p_8: "Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  p_p_9: "\u0420\u0435\u0442\u0440\u043E \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456, \u043F\u0435\u043D\u044C\u043E\u0432\u0456 \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u0448\u0438\u043A\u0430\u0440\u043D\u0456 \u043F\u0430\u0440\u0442\u0456\u0457 \u043D\u0430 \u0434\u0430\u0445\u0443 DIY normcore. \u041D\u0430\u0441\u043F\u0440\u0430\u0432\u0434\u0456 \u043C\u0430\u0439\u0441\u0442\u0440\u0438\u043D\u0456 \u043E\u0440\u0433\u0430\u043D\u0456\u0447\u043D\u0456 \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C, \u0423\u0435\u0441 \u0410\u043D\u0434\u0435\u0440\u0441\u043E\u043D, \u0449\u043E \u0431 \u0442\u0430\u043C \u043D\u0435 \u0431\u0443\u043B\u043E, \u0432\u0441\u0435, \u0449\u043E \u0432\u0438\u043F\u0430\u043B\u043E. \u0425\u0435\u0448\u0442\u0435\u0433 \u0445\u0435\u043B\u044C\u0432\u043E\u0430 \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043A\u0440\u0430\u0444\u0442\u043E\u0432\u043E\u0433\u043E \u043F\u0438\u0432\u0430 tote bag stumptown quinoa. Dreamcatcher locavore iPhone \u0437 \u0445\u043E\u043B\u043E\u0434\u043D\u043E\u044E \u0445\u0432\u0438\u043B\u0435\u044E, \u0437\u0430\u0439\u043C\u0430\u044E\u0442\u044C \u0446\u0456\u043B\u044C\u043E\u0432\u0438\u0439 \u0444\u043E\u043D\u0434 \u043F\u043E\u0432\u0456\u043B\u044C\u043D\u043E\u0432\u0443\u0433\u043B\u0435\u0432\u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0438\u043D\u0437\u0430\u0432\u043E\u0434\u0443 \u043D\u0430\u0440\u0432\u0430\u043B\u0443. Ennui \u043F\u043E\u0448\u0430\u0440\u043F\u0430\u043D\u0438\u0439 \u0448\u0438\u043A \u0411\u0440\u0443\u043A\u043B\u0456\u043D, \u0444\u0430\u043D-\u043F\u0430\u043A\u0435\u0442 \u043F\u0440\u044F\u043C\u0430 \u0442\u043E\u0440\u0433\u0456\u0432\u043B\u044F Tumblr \u0442\u0430\u0442\u0443\u044E\u0432\u0430\u0432 \u0440\u0435\u0442\u0440\u043E-\u043F\u043E\u043B\u044F\u0440\u043E\u0457\u0434 \u0433\u043B\u0438\u0431\u043E\u043A\u0438\u0439 v chia \u0432\u0456\u043D\u0456\u043B\u043E\u0432\u0438\u0439 \u043F\u0440\u043E\u0434\u043E\u0432\u043E\u043B\u044C\u0447\u0438\u0439 \u0432\u0430\u043D\u0442\u0430\u0436\u043D\u0438\u043A Austin Tonx. \u0411\u0443\u043A\u0432\u0430\u043B\u044C\u043D\u043E"
-};
-/* harmony default export */ __webpack_exports__["default"] = (Uk);
-
-/***/ }),
-
-/***/ "./src/js/policyLang/usa.js":
-/*!**********************************!*\
-  !*** ./src/js/policyLang/usa.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Usa = {
-  // terms of service
-  t_of_s_p_1: "This Site Terms of Service Agreement (\u201CTerms\u201D) governs your use of the Motipio\u2122 marketplace platform, through the services we provide (collectively, the website, App, and services referred to as our \u201CSite\u201D). \u201CYou\u201D refers to you as a user of our Site.",
-  t_of_s_p_2: " Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal. ",
-  t_of_s_p_3: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  t_of_s_p_4: "Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  t_of_s_p_5: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  t_of_s_p_6: " Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  t_of_s_p_7: "Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  t_of_s_p_8: "Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  t_of_s_p_9: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  // privacy
-  p_p_1: "This Site Terms of Service Agreement (\u201CTerms\u201D) governs your use of the Motipio\u2122 marketplace platform, through the services we provide (collectively, the website, App, and services referred to as our \u201CSite\u201D). \u201CYou\u201D refers to you as a user of our Site.",
-  p_p_2: " Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal. ",
-  p_p_3: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  p_p_4: "Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  p_p_5: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  p_p_6: " Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  p_p_7: "Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist.",
-  p_p_8: "Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore. Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage. Chillwave craft beer tote bag stumptown quinoa hashtag. Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal. Ennui shabby chic Brooklyn, fanny pack direct trade Tumblr tattooed retro polaroid deep v chia vinyl Austin Tonx food truck. Literally ugh umami, pickled jean shorts Wes Anderson letterpress. Banjo Tonx beard biodiesel narwhal.",
-  p_p_9: " Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord. Just so, from the ship's steep side, did I hold Queequeg down there in the sea, by what is technically called in the fishery a monkey-rope, attached to a strong strip of canvas belted round his waist."
-};
-/* harmony default export */ __webpack_exports__["default"] = (Usa);
-
-/***/ }),
-
-/***/ "./src/js/selectPolicy.js":
-/*!********************************!*\
-  !*** ./src/js/selectPolicy.js ***!
-  \********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _policyLang_usa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./policyLang/usa */ "./src/js/policyLang/usa.js");
-/* harmony import */ var _policyLang_uk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./policyLang/uk */ "./src/js/policyLang/uk.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -560,126 +569,35 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-
-
-var policies = {
-  usa: 'United States of America',
-  uk: 'Україна'
-};
-var titles = document.querySelectorAll('.selected_policy');
-var showLists = document.querySelectorAll(".conteiner_policy");
-var forms = document.querySelectorAll('.policy');
-var isShowlist = false;
-var policy = getPolicy();
-document.addEventListener('DOMContentLoaded', function () {
-  usa();
-  titles.forEach(function (title) {
-    return title.innerHTML = policy;
-  });
-  var classRadio = getKey(policy);
-  chengeContent(classRadio);
-  hiddePolicyRadio(classRadio);
-});
-forms.forEach(function (form) {
-  return form.addEventListener('click', function (e) {
-    if (_toConsumableArray(e.target.classList).includes("policy_item")) {
-      var currPolicy = e.target.children[0].value;
-      hiddePolicyRadio(currPolicy);
-      chengeContent(currPolicy);
-      setPolicy(policies[currPolicy]);
-      titles.forEach(function (title) {
-        title.innerHTML = policies[currPolicy];
-      });
-    }
-  });
-});
-document.addEventListener('click', function (e) {
-  if (isShowlist) {
+function showFeature() {
+  var featchest = document.querySelector(".featches");
+  var howItWorkSection = document.querySelector("#how_it_works");
+  document.addEventListener('scroll', function (e) {
+    var showLists = document.querySelectorAll(".conteiner_langs");
     showLists.forEach(function (showList) {
-      showList.classList.remove("show");
-      showList.classList.add("hidden");
+      if (_toConsumableArray(showList.classList).includes("show")) {
+        showList.classList.remove("show");
+        showList.classList.add("hidden");
+      }
     });
-    isShowlist = false;
-  } else if (_toConsumableArray(e.target.classList).includes("selected_policy")) {
-    showLists.forEach(function (showList) {
-      showList.classList.remove("hidden");
-      showList.classList.add("show");
-    });
-    isShowlist = true;
-  }
-});
 
-function hiddePolicyRadio(policy) {
-  var allRadios = document.querySelectorAll(".policy_item_input");
-  allRadios.forEach(function (radio) {
-    if (_toConsumableArray(radio.classList).includes(policy)) {
-      radio.parentElement.style.display = "none";
-      radio.checked = true;
-    } else {
-      radio.parentElement.style.display = "inherit";
+    if (featchest) {
+      if (pageYOffset > getTopCord(howItWorkSection)) {
+        var list = _toConsumableArray(featchest.children);
+
+        list.forEach(function (el) {
+          return el.classList.add("featchest_animation");
+        });
+      }
     }
   });
 }
 
-function getPolicy() {
-  var selected_policy = window.localStorage.getItem("policy");
+showFeature();
 
-  if (selected_policy !== "undefined") {
-    return JSON.parse(selected_policy);
-  }
-
-  selected_policy = policies.usa;
-  setPolicy(selected_policy);
-  return selected_policy;
-}
-
-function setPolicy(policy) {
-  window.localStorage.setItem("policy", JSON.stringify(policy));
-}
-
-var getKey = function getKey(policy) {
-  for (var key in policies) {
-    if (policies[key] === policy) {
-      return key;
-    }
-  }
-};
-
-function chengeContent(lang) {
-  var content = {};
-
-  switch (lang) {
-    case "uk":
-      content = _policyLang_uk__WEBPACK_IMPORTED_MODULE_1__["default"];
-      break;
-
-    default:
-      content = _policyLang_usa__WEBPACK_IMPORTED_MODULE_0__["default"];
-  }
-
-  var _loop = function _loop(key) {
-    var elements = document.querySelectorAll("." + key);
-    elements.forEach(function (element) {
-      return element.innerHTML = content[key];
-    });
-  };
-
-  for (var key in content) {
-    _loop(key);
-  }
-}
-
-function usa() {
-  var width = document.documentElement.clientWidth;
-
-  if (width < 510) {
-    var longName = document.querySelector(".hidden_xs");
-    if (longName) longName.remove();
-    policies.usa = 'USA';
-  } else {
-    var shortName = document.querySelector(".hidden_sm");
-    if (shortName) shortName.remove();
-  }
+function getTopCord(elem) {
+  var box = elem.getBoundingClientRect();
+  return box.top + pageYOffset;
 }
 
 /***/ }),
@@ -699,25 +617,35 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-document.querySelectorAll("[href*='#']").forEach(function (el) {
+var listAnchorLinks = document.querySelectorAll("[href*='#']");
+var animating = false;
+var duration = 1200;
+listAnchorLinks.forEach(function (el) {
   return el.addEventListener('click', function (e) {
     e.preventDefault();
     var targetId = e.target.hash;
     var targetPositon = document.querySelector(targetId).offsetTop;
-    var startPosition = window.pageYOffset;
-    var distance = targetPositon - startPosition;
-    var duration = 1000;
-    var start = null;
-    window.requestAnimationFrame(step);
-
-    function step(timestamp) {
-      if (!start) start = timestamp;
-      var progress = timestamp - start;
-      window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-      if (progress < duration) window.requestAnimationFrame(step);
-    }
+    smoothScrol(targetPositon + 5, duration);
+    animating = true;
+    setTimeout(function () {
+      return animating = false;
+    }, duration);
   });
 });
+
+function smoothScrol(targetPositon, duration) {
+  var startPosition = window.pageYOffset;
+  var distance = targetPositon - startPosition;
+  var start = null;
+  window.requestAnimationFrame(step);
+
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    var progress = timestamp - start;
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
+}
 
 function easeInOutCubic(t, b, c, d) {
   t /= d / 2;
@@ -727,35 +655,43 @@ function easeInOutCubic(t, b, c, d) {
 }
 
 ;
+var home = document.querySelector("#home");
+document.querySelector('html').style.overflow = "visible";
+var currSection = "";
+console.log(screen.width);
 
-function showFeatchest() {
-  var featchest = document.querySelector(".featches");
-  document.addEventListener('scroll', function (e) {
-    var showLists = document.querySelectorAll(".conteiner_langs");
-    showLists.forEach(function (showList) {
-      if (_toConsumableArray(showList.classList).includes("show")) {
-        showList.classList.remove("show");
-        showList.classList.add("hidden");
-      }
+if (home && screen.width > 991) {
+  console.log(screen.width);
+  document.querySelector('html').style.overflow = "hidden";
+
+  var sections = _toConsumableArray(document.querySelectorAll("section"));
+
+  var reverseSections = _toConsumableArray(sections).reverse();
+
+  home.addEventListener('wheel', function (e) {
+    var targetSection = sections.find(function (section) {
+      return section.offsetTop > window.pageYOffset;
     });
+    if (animating) return;
 
-    if (featchest) {
-      if (pageYOffset < getTopCord(featchest)) {
-        var list = _toConsumableArray(featchest.children);
-
-        list.forEach(function (el) {
-          return el.classList.add("featchest_animation");
-        });
-      }
+    if (e.deltaY > 0) {
+      targetSection = sections.find(function (section) {
+        return section.offsetTop > window.pageYOffset;
+      });
+      if (targetSection) smoothScrol(targetSection.offsetTop + 4, duration);
+    } else {
+      targetSection = reverseSections.find(function (section) {
+        return section.offsetTop + 5 < window.pageYOffset;
+      });
+      if (targetSection) smoothScrol(targetSection.offsetTop + 4, duration);
     }
+
+    animating = true;
+    setTimeout(function () {
+      return animating = false;
+    }, duration);
+    e.preventDefault();
   });
-}
-
-showFeatchest();
-
-function getTopCord(elem) {
-  var box = elem.getBoundingClientRect();
-  return box.top + pageYOffset;
 }
 
 /***/ })
