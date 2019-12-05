@@ -2102,7 +2102,6 @@ p {
 }
 
 .let_join .description .join_to_us__tags .tags__list {
-  width: 540px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -4053,6 +4052,7 @@ p {
   }
 
   .let_join .description .join_to_us__tags .tags__list {
+    width: 540px;
     justify-content: flex-start;
   }
 
