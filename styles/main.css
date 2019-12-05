@@ -779,8 +779,6 @@ p {
 
 .logo {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
 }
 
 .logo img {
@@ -1478,12 +1476,6 @@ p {
   margin-top: 0;
 }
 
-.monetize {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-
 .monetize .description {
   display: flex;
   flex-direction: column;
@@ -1682,8 +1674,13 @@ p {
   margin-bottom: 30px;
 }
 
+.join_to_us .description {
+  display: flex;
+  flex-direction: column;
+}
+
 .join_to_us .description .pro_text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 34px;
   font-weight: 300;
   margin-bottom: 33px;
@@ -1712,13 +1709,8 @@ p {
 }
 
 .join_to_us .viwe {
-  width: 50%;
   display: flex;
   justify-content: center;
-}
-
-.join_to_us .viwe .action {
-  width: 66.8%;
 }
 
 .join_to_us .viwe .action .action_item {
@@ -1727,7 +1719,11 @@ p {
   background: #fff;
   margin-bottom: 30px;
   border-radius: 28px;
-  padding: 22px 50px 24px 100px;
+  padding: 22px 10px 10px 100px;
+}
+
+.join_to_us .viwe .action .action_item:nth-child(1) {
+  padding-bottom: 25px;
 }
 
 .join_to_us .viwe .action .action_item:nth-child(1)::before {
@@ -1774,6 +1770,10 @@ p {
   position: absolute;
   left: 27px;
   top: 25px;
+}
+
+.join_to_us .viwe .action .action_item:nth-child(3) {
+  padding-bottom: 25px;
 }
 
 .join_to_us .viwe .action .action_item:nth-child(3) p a {
@@ -1844,8 +1844,7 @@ p {
 
 .hom_you_can_work .benefits__list .benefit__item,
 .how_earn .benefits__list .benefit__item {
-  width: 540px;
-  padding-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
   margin-right: 30px;
 }
@@ -1854,7 +1853,7 @@ p {
 .how_earn .benefits__list .benefit__item h3 {
   font-size: 30px;
   line-height: 35px;
-  padding-left: 120px;
+  padding-left: 125px;
   padding-bottom: 20px;
 }
 
@@ -2034,10 +2033,11 @@ p {
 
 .receive_requests .viwe {
   position: relative;
+  margin-top: 62px;
 }
 
 .receive_requests .viwe .contein_img {
-  width: 200%;
+  width: 100vw;
   height: 830px;
   position: absolute;
   background: no-repeat url("../img/how_to_resive_request.png");
@@ -2054,7 +2054,7 @@ p {
 
 .receive_requests .description .pro_text {
   font-weight: 300;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 32px;
   color: #9297A2;
   margin: 0;
@@ -2068,20 +2068,14 @@ p {
   text-decoration: underline;
 }
 
-#let_join {
-  background: linear-gradient(180deg, #0A121A 0%, #000000 97.44%);
-  margin-top: 0;
-  color: white;
-}
-
-#let_join .let_join {
+.let_join {
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-#let_join .let_join .let_join__title {
+.let_join .let_join__title {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -2093,51 +2087,50 @@ p {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-#let_join .let_join .let_join__title .socials {
+.let_join .let_join__title .socials {
   display: flex;
   justify-content: space-between;
   width: 132px;
 }
 
-#let_join .let_join .description {
+.let_join .description {
   padding-top: 60px;
 }
 
-#let_join .let_join .description .join_to_us__tags {
+.let_join .description .join_to_us__tags {
   width: 100%;
   padding-top: 25px;
   display: flex;
 }
 
-#let_join .let_join .description .join_to_us__tags .tags__description {
+.let_join .description .join_to_us__tags .tags__description {
   font-size: 20px;
   line-height: 34px;
   color: #9297A2;
 }
 
-#let_join .let_join .description .join_to_us__tags .tags__list {
+.let_join .description .join_to_us__tags .tags__list {
   width: 540px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-#let_join .let_join .description .join_to_us__tags .tags__list .tag__item {
+.let_join .description .join_to_us__tags .tags__list .tag__item {
   font-size: 18px;
   font-weight: 400;
-  height: 20px;
+  letter-spacing: -0.434118px;
   text-align: center;
   margin: 0 30px 30px 0;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #000000;
   border-radius: 8px;
-  padding: 10px;
 }
 
-#let_join .let_join .description .join_to_us__tags .tags__list .tag__item:last-child {
+.let_join .description .join_to_us__tags .tags__list .tag__item:last-child {
   background: none;
 }
 
-#let_join .let_join .description .btn {
+.let_join .description .btn {
   position: relative;
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   border-radius: 40px;
@@ -2145,7 +2138,7 @@ p {
   height: 80px;
 }
 
-#let_join .let_join .description .btn a {
+.let_join .description .btn a {
   font-size: 26px;
   display: inline-block;
   position: absolute;
@@ -2155,7 +2148,7 @@ p {
   transition: all 0.3s;
 }
 
-#let_join .let_join .description .btn a:hover {
+.let_join .description .btn a:hover {
   color: #0072FF;
   font-size: 28px;
   left: 9.5%;
@@ -2479,7 +2472,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-left: -15px;
   }
 
   .footer .footer_xs .nav {
@@ -2733,6 +2725,7 @@ p {
 
   .join_to_us .pro_title {
     margin-top: 120px;
+    margin-bottom: 60px;
   }
 
   .join_to_us .content {
@@ -2743,15 +2736,13 @@ p {
 
   .join_to_us .description {
     order: 2;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 120px;
   }
 
   .join_to_us .viwe {
+    width: 100%;
     order: 1;
-    margin-top: 60px;
   }
 
   .join_to_us .viwe .action {
@@ -2765,19 +2756,27 @@ p {
 
   .hom_you_can_work .pro_title,
   .how_earn .pro_title {
+    margin-top: 120px;
     line-height: 56px;
     border: none;
   }
 
   .hom_you_can_work .benefits__list,
   .how_earn .benefits__list {
-    width: calc(108.33333% - 1.875rem);
+    width: 100%;
+  }
+
+  .hom_you_can_work .benefits__list .benefit__item,
+  .how_earn .benefits__list .benefit__item {
+    width: 100%;
+    margin-right: 0px;
   }
 
   .hom_you_can_work .benefits__list .benefit__item h3,
   .how_earn .benefits__list .benefit__item h3 {
     letter-spacing: -0.723529px;
     word-break: break-word;
+    margin-bottom: 40px;
   }
 
   .hom_you_can_work .benefits__list .benefit__item:nth-child(1)::before,
@@ -2804,6 +2803,7 @@ p {
   .how_earn .benefits__list .benefit__item:last-child {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 
   .hom_you_can_work .benefits__list .benefit__item:last-child .benefit__item__text p,
@@ -2824,6 +2824,7 @@ p {
   .how_earn .benefits__list .benefit__item:last-child {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0px;
   }
 
   .how_earn .benefits__list .benefit__item:last-child .benefit__item__text p {
@@ -2834,12 +2835,8 @@ p {
     top: 0;
   }
 
-  #receive_requests {
-    background-position: bottom;
-    height: 867px;
-  }
-
   .receive_requests {
+    height: 1090px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2847,13 +2844,16 @@ p {
   }
 
   .receive_requests .viwe {
-    width: 100%;
+    width: 100vw;
+    height: 550px;
     order: 2;
   }
 
   .receive_requests .viwe .contein_img {
-    top: -4.5%;
-    left: -10%;
+    height: 100%;
+    left: 0%;
+    background-position: 45% 0px;
+    background-size: 120%;
   }
 
   .receive_requests .description {
@@ -2874,65 +2874,77 @@ p {
     display: none;
   }
 
-  #let_join {
-    padding-top: 120px;
-    height: max-content;
+  .let_join .let_join__title {
+    margin-top: 110px;
+    height: auto;
   }
 
-  #let_join .let_join .let_join__title .socials {
+  .let_join .let_join__title .socials {
     display: none;
   }
 
-  #let_join .let_join .description {
+  .let_join .description {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #let_join .let_join .description .logo {
+  .let_join .description .logo {
     width: 172px;
+    margin-bottom: 60px;
   }
 
-  #let_join .let_join .description .logo img {
+  .let_join .description .logo img {
     width: 100%;
     height: auto;
   }
 
-  #let_join .let_join .description .join_to_us__tags {
+  .let_join .description .join_to_us__tags {
     flex-direction: column;
     align-items: center;
+    padding-top: 0px;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__description {
+  .let_join .description .join_to_us__tags .tags__description {
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 60px;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list {
+  .let_join .description .join_to_us__tags .tags__list {
+    width: 100%;
     justify-content: center;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item {
+  .let_join .description .join_to_us__tags .tags__list .tag__item {
+    padding: 11px;
     margin: 0 9px 30px 0;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(2) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(2) {
     display: none;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(5) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(3) {
+    margin-right: 0px;
+  }
+
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(5) {
     display: none;
   }
 
-  #let_join .let_join .description .btn {
+  .let_join .description .btn {
     height: 120px;
+    width: 100%;
     border-radius: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 160px;
   }
 
-  #let_join .let_join .description .btn a {
+  .let_join .description .btn a {
     position: static;
     text-align: center;
     word-wrap: break-word;
@@ -2940,43 +2952,42 @@ p {
     width: 65%;
   }
 
-  #let_join .let_join .description .footer_xs_pro {
+  .let_join .description .footer_xs_pro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 160px;
-    height: 315px;
     justify-content: space-between;
   }
 
-  #let_join .let_join .description .footer_xs_pro .pro_socials {
+  .let_join .description .footer_xs_pro .pro_socials {
     display: flex;
     justify-content: space-between;
     width: 185px;
+    margin-bottom: 90px;
   }
 
-  #let_join .let_join .description .footer_xs_pro .pro_socials img {
+  .let_join .description .footer_xs_pro .pro_socials img {
     width: 60px;
     height: 60px;
   }
 
-  #let_join .let_join .description .footer_xs_pro .pro_footer_text {
+  .let_join .description .footer_xs_pro .pro_footer_text {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  #let_join .let_join .description .footer_xs_pro .pro_footer_text li {
+  .let_join .description .footer_xs_pro .pro_footer_text li {
     margin: 0 3px 30px 0;
   }
 
-  #let_join .let_join .description .footer_xs_pro .pro_footer_text li a {
+  .let_join .description .footer_xs_pro .pro_footer_text li a {
     color: white;
     font-size: 14px;
   }
 
-  #let_join .let_join .description .footer_xs_pro .footer_copyright {
+  .let_join .description .footer_xs_pro .footer_copyright {
     font-size: 12px;
   }
 
@@ -3071,12 +3082,6 @@ p {
 
   .xs_n {
     display: none;
-  }
-}
-
-@media screen and (min-width: 20rem) and (min-width: 20rem) {
-  #let_join .let_join .description .footer_xs_pro {
-    width: calc(108.33333% - 1.875rem);
   }
 }
 
@@ -3888,14 +3893,13 @@ p {
 
   .join_to_us .description {
     order: 1;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     width: 540px;
     margin-bottom: 0px;
   }
 
   .join_to_us .viwe {
+    width: 50%;
     position: relative;
     order: 2;
     margin-top: 60px;
@@ -3910,6 +3914,11 @@ p {
     padding: 120px 0 60px 0;
     border-bottom: 1px solid #E5E5E5;
     letter-spacing: -1.392px;
+  }
+
+  .hom_you_can_work .benefits__list .benefit__item,
+  .how_earn .benefits__list .benefit__item {
+    width: 540px;
   }
 
   .hom_you_can_work .benefits__list .benefit__item h3,
@@ -4007,62 +4016,62 @@ p {
     margin-bottom: 50px;
   }
 
-  #let_join .let_join .let_join__title .socials {
+  .let_join .let_join__title .socials {
     display: flex;
   }
 
-  #let_join .let_join .description {
+  .let_join .description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  #let_join .let_join .description .join_to_us__tags {
+  .let_join .description .join_to_us__tags {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__description {
+  .let_join .description .join_to_us__tags .tags__description {
     text-align: left;
     width: 540px;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list {
+  .let_join .description .join_to_us__tags .tags__list {
     justify-content: flex-start;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item {
+  .let_join .description .join_to_us__tags .tags__list .tag__item {
     margin: 0 20px 25px 0;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(1) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(1) {
     margin: 0 30px 30px 0;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(2) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(2) {
     display: inherit;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(3) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(3) {
     display: inherit;
     margin: 0 0px 30px 0;
   }
 
-  #let_join .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(5) {
+  .let_join .description .join_to_us__tags .tags__list .tag__item:nth-child(5) {
     display: inherit;
   }
 
-  #let_join .let_join .description .btn {
+  .let_join .description .btn {
     width: 420px;
     height: 80px;
     margin-top: 41px;
   }
 
-  #let_join .let_join .description .btn a {
+  .let_join .description .btn a {
     width: 90%;
   }
 
-  #let_join .let_join .description .footer_xs_pro {
+  .let_join .description .footer_xs_pro {
     display: none;
   }
 
