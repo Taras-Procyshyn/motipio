@@ -2889,6 +2889,7 @@ p {
 
   .let_join .description .logo {
     width: 172px;
+    height: auto;
     margin-bottom: 60px;
   }
 
