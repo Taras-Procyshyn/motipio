@@ -2092,7 +2092,6 @@ p {
 
 .let_join .description .join_to_us__tags {
   width: 100%;
-  padding-top: 25px;
   display: flex;
 }
 
@@ -4043,6 +4042,7 @@ p {
   }
 
   .let_join .description .join_to_us__tags {
+    padding-top: 25px;
     flex-direction: row;
     justify-content: space-between;
   }
