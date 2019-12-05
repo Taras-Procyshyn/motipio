@@ -656,12 +656,10 @@ function easeInOutCubic(t, b, c, d) {
 
 ;
 var home = document.querySelector("#home");
-document.querySelector('html').style.overflow = "visible";
 var currSection = "";
 console.log(screen.width);
 
 if (home && screen.width > 991) {
-  console.log(screen.width);
   document.querySelector('html').style.overflow = "hidden";
 
   var sections = _toConsumableArray(document.querySelectorAll("section"));

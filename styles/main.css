@@ -10,6 +10,56 @@
   }
 }
 
+@keyframes move_chat_lg {
+  0% {
+    transform: translateY(352px);
+  }
+
+  5% {
+    transform: translateY(281px);
+  }
+
+  15% {
+    transform: translateY(281px);
+  }
+
+  20% {
+    transform: translateY(210px);
+  }
+
+  30% {
+    transform: translateY(210px);
+  }
+
+  35% {
+    transform: translateY(139px);
+  }
+
+  45% {
+    transform: translateY(139px);
+  }
+
+  50% {
+    transform: translateY(68px);
+  }
+
+  60% {
+    transform: translateY(68px);
+  }
+
+  65% {
+    transform: translateY(-3px);
+  }
+
+  75% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
 @keyframes move_chat {
   0% {
     transform: translateY(402px);
@@ -652,6 +702,10 @@ ul {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -1026,18 +1080,16 @@ p {
   background-size: 20px;
 }
 
+#about {
+  position: relative;
+}
+
 .about {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
-}
-
-.about .description {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .about .description .title {
@@ -1047,10 +1099,6 @@ p {
 .about .description .text {
   margin-top: 0;
   margin-bottom: 60px;
-}
-
-.about .description .section_link {
-  margin-bottom: 120px;
 }
 
 .about .viwe {
@@ -1109,8 +1157,6 @@ p {
   align-items: flex-end;
   color: white;
   font-weight: 300;
-  transform: translateY(402px);
-  animation: move_chat 20s 3s linear forwards;
 }
 
 .about .viwe .chat li {
@@ -1164,8 +1210,7 @@ p {
   display: inline-block;
   font-weight: 300;
   position: absolute;
-  top: 650px;
-  width: 70px;
+  width: 90px;
   color: #fff;
   opacity: 0;
   left: 40px;
@@ -1204,8 +1249,7 @@ p {
   display: inline-block;
   font-weight: 300;
   position: absolute;
-  top: 650px;
-  width: 70px;
+  width: 90px;
   color: #fff;
   opacity: 0;
   right: 40px;
@@ -1237,6 +1281,10 @@ p {
   animation: 1.5s typing_spiner infinite cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9999s;
 }
 
+.about .section_link {
+  margin-bottom: 120px;
+}
+
 #how_it_works {
   position: relative;
   background: #0C1723;
@@ -1245,6 +1293,7 @@ p {
 .how_it_works {
   height: 100%;
   color: #fff;
+  position: relative;
 }
 
 .how_it_works .header_section {
@@ -1270,20 +1319,6 @@ p {
 .how_it_works .content .description .how_it_works__text {
   margin-bottom: 0;
   margin-top: 2.5vh;
-}
-
-.how_it_works .content .description .how_it_works__selection_link {
-  font-weight: bold;
-  padding-left: 40px;
-  font-size: 28px;
-  line-height: 40px;
-  height: 40px;
-  width: 250px;
-  color: white;
-  margin-top: 30vh;
-  background: no-repeat url("../img/svg/Arr_for_link_white.svg");
-  background-position: 10px 0px;
-  background-size: 20px;
 }
 
 .how_it_works .content .viwe {
@@ -1391,6 +1426,19 @@ p {
   color: #9297A2;
 }
 
+.how_it_works .section_link .how_it_works__selection_link {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+  height: 40px;
+  width: 220px;
+  color: #fff;
+  background: no-repeat url("../img/svg/Arr_for_link_white.svg");
+  background-position: 10px 0px;
+  background-size: 20px;
+  padding: 0;
+}
+
 #download {
   position: relative;
 }
@@ -1420,12 +1468,14 @@ p {
 
 .pro_title {
   font-size: 48px;
+  letter-spacing: -1.392px;
 }
 
 .pro_text {
   font-size: 20px;
   color: #9297A2;
   line-height: 34px;
+  margin-top: 0;
 }
 
 .monetize {
@@ -1436,17 +1486,7 @@ p {
 
 .monetize .description {
   display: flex;
-  width: 50%;
-  display: flex;
   flex-direction: column;
-}
-
-.monetize .description .pro_title {
-  margin-top: 15%;
-}
-
-.monetize .description .pro_text {
-  margin-top: 85px;
 }
 
 .monetize .viwe {
@@ -1635,7 +1675,6 @@ p {
 .join_to_us {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
 }
 
 .join_to_us .pro_title {
@@ -2300,6 +2339,10 @@ p {
     max-width: 19.6875rem;
   }
 
+  .container {
+    padding: 0;
+  }
+
   .doc_container {
     max-width: 19.6875rem;
   }
@@ -2436,6 +2479,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-left: -15px;
   }
 
   .footer .footer_xs .nav {
@@ -2492,6 +2536,7 @@ p {
   }
 
   .section_link {
+    width: 90%;
     margin-top: 13%;
     text-align: center;
   }
@@ -2565,15 +2610,6 @@ p {
     position: static;
   }
 
-  .how_it_works .content .description .how_it_works__selection_link {
-    padding: 0;
-    position: absolute;
-    bottom: 11%;
-    left: calc(50% - 110px);
-    padding-left: 0;
-    background-position: 30px 5px;
-  }
-
   .how_it_works .content .viwe {
     width: 100%;
     overflow: visible;
@@ -2598,6 +2634,21 @@ p {
     width: 100%;
     padding: 25px 0 25px 100px;
     margin-bottom: 55px;
+  }
+
+  .how_it_works .section_link {
+    width: 220px;
+    position: absolute;
+    bottom: -8%;
+    left: calc(50% - 110px);
+    padding-left: 0;
+    background-position: 30px 5px;
+  }
+
+  .how_it_works .section_link .how_it_works__selection_link {
+    display: inline-block;
+    width: 100%;
+    background-position: 13px;
   }
 
   #download {
@@ -2650,12 +2701,10 @@ p {
   .pro_title {
     text-align: center;
     margin-top: 0;
-    letter-spacing: -1.392px;
   }
 
   .pro_text {
     text-align: center;
-    margin-top: 0;
   }
 
   .monetize {
@@ -2663,13 +2712,27 @@ p {
   }
 
   .monetize .description {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .monetize .description .pro_title {
+    margin-top: 0px;
+  }
+
+  .monetize .description .pro_text {
+    margin-top: 35px;
+    margin-bottom: 120px;
   }
 
   .monetize .viwe {
     display: none;
+  }
+
+  .join_to_us .pro_title {
+    margin-top: 120px;
   }
 
   .join_to_us .content {
@@ -3096,6 +3159,12 @@ p {
     font-size: 28px;
   }
 
+  .section_link {
+    width: 100%;
+    margin-top: 13%;
+    text-align: center;
+  }
+
   .about .description .title {
     margin-bottom: 60px;
   }
@@ -3117,7 +3186,7 @@ p {
     height: 58;
   }
 
-  .about .description .section_link {
+  .about .section_link {
     margin-bottom: 18%;
   }
 
@@ -3129,17 +3198,19 @@ p {
     margin-top: 80px;
   }
 
-  .how_it_works .content .description .how_it_works__selection_link {
-    bottom: 9.5%;
-    left: calc(50% - 120px);
-  }
-
   .how_it_works .content .viwe .viwe__title {
     font-size: 44px;
   }
 
   .how_it_works .content .viwe .featches {
     width: calc(100% - 1.875rem);
+  }
+
+  .how_it_works .section_link {
+    width: 220px;
+    margin-top: 0;
+    bottom: -9.5%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -3206,6 +3277,12 @@ p {
     margin-bottom: 30px;
   }
 
+  .section_link {
+    width: 95%;
+    margin-top: 13%;
+    text-align: center;
+  }
+
   .about .description .downloads_icons {
     margin: 0 auto;
     width: 600px;
@@ -3221,6 +3298,11 @@ p {
 
   .about .viwe {
     width: calc(100% - 1.875rem);
+  }
+
+  .how_it_works .section_link {
+    bottom: -10%;
+    left: calc(50% - 120px);
   }
 
   .download .description {
@@ -3322,6 +3404,15 @@ p {
     text-align: left;
   }
 
+  .section_link {
+    position: absolute;
+    bottom: 350px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
   #about {
     height: 100vh;
   }
@@ -3351,12 +3442,6 @@ p {
     height: 48px;
   }
 
-  .about .description .section_link {
-    display: flex;
-    margin-top: 50%;
-    width: 100%;
-  }
-
   .about .viwe {
     width: calc(41.66667% - 1.875rem);
   }
@@ -3365,7 +3450,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 400px;
     position: relative;
     top: -185px;
     left: -70px;
@@ -3404,16 +3489,27 @@ p {
   }
 
   .about .viwe .chat {
+    transform: translateY(352px);
     width: calc(100% - 40px);
     font-size: 14px;
+    animation: move_chat_lg 20s 3s linear forwards;
   }
 
   .about .viwe .steve_typing {
-    top: 620px;
+    top: 600px;
   }
 
   .about .viwe .user_typing {
-    top: 610px;
+    top: 600px;
+  }
+
+  .about .section_link {
+    position: absolute;
+    bottom: 380px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
   }
 
   #how_it_works {
@@ -3431,15 +3527,6 @@ p {
 
   .how_it_works .content .description {
     width: calc(50% - 1.875rem);
-  }
-
-  .how_it_works .content .description .how_it_works__selection_link {
-    position: relative;
-    padding-left: 40px;
-    left: 0;
-    width: 100px;
-    background-position: 10px 0px;
-    align-self: flex-start;
   }
 
   .how_it_works .content .viwe {
@@ -3475,6 +3562,11 @@ p {
     padding: 15px 0 25px 100px;
     margin-bottom: 40px;
     opacity: 0;
+  }
+
+  .how_it_works .section_link {
+    left: 0;
+    bottom: 210px;
   }
 
   #download {
@@ -3537,7 +3629,7 @@ p {
   }
 
   .lang .selected_lang {
-    width: 60px;
+    width: 80px;
   }
 
   .burger_menue {
@@ -3629,7 +3721,17 @@ p {
     font-weight: 300;
   }
 
+  .section_link {
+    position: absolute;
+    bottom: 400px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
   .about .description {
+    position: static;
     align-items: flex-start;
   }
 
@@ -3644,14 +3746,8 @@ p {
     height: 58px;
   }
 
-  .about .description .section_link {
-    display: flex;
-    margin-top: 40%;
-    width: 100%;
-  }
-
   .about .viwe {
-    width: 490px;
+    width: 540px;
     position: relative;
     left: 0;
     border-radius: 88px;
@@ -3670,14 +3766,13 @@ p {
   }
 
   .about .viwe .top_of_viwe .head:after {
-    left: 99px;
+    left: 96px;
   }
 
   .about .viwe .top_of_viwe .head .steve_name {
-    padding-right: 0px;
     font-size: 20px;
-    width: 190px;
-    padding-left: 72px;
+    padding-left: 70px;
+    padding-right: 30px;
   }
 
   .about .viwe .top_of_viwe .head .per {
@@ -3690,8 +3785,10 @@ p {
   }
 
   .about .viwe .chat {
-    width: calc(100% - 80px);
+    transform: translateY(402px);
+    width: calc(100% - 59px);
     font-size: 16px;
+    animation: move_chat 20s 3s linear forwards;
   }
 
   .about .viwe .steve_typing {
@@ -3742,12 +3839,10 @@ p {
     line-height: 56px;
     text-align: left;
     margin-top: 0;
-    letter-spacing: -1.392px;
   }
 
   .pro_text {
     text-align: left;
-    margin-top: 0;
   }
 
   .monetize {
@@ -3759,8 +3854,15 @@ p {
   }
 
   .monetize .description {
-    flex-direction: column;
     width: 540px;
+  }
+
+  .monetize .description .pro_title {
+    margin-top: 15%;
+  }
+
+  .monetize .description .pro_text {
+    margin-top: 85px;
   }
 
   .monetize .viwe {
