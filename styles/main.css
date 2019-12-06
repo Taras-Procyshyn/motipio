@@ -2011,6 +2011,7 @@ p {
   line-height: 32px;
   color: #9297A2;
   margin: 0;
+  z-index: 2;
 }
 
 .receive_requests .description .pro_text a {
