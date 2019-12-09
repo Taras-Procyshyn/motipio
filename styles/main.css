@@ -803,23 +803,22 @@ p {
 }
 
 .lang .conteiner_langs {
-  width: 7.5rem;
-  height: 12.875rem;
+  width: 10.625rem;
+  height: 16rem;
   position: absolute;
-  background: no-repeat url("../img/svg/Check_lang_bg.svg");
-  box-shadow: 1px 19px 31px -9px rgba(0, 0, 0, 0.29);
+  background: no-repeat url("../img/svg/modal_with_shadow.svg");
   background-size: cover;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  left: -1.25rem;
-  top: 3.75rem;
+  left: -2.8125rem;
+  top: 1.5625rem;
   transition: all 0.3s linear;
 }
 
 .lang .conteiner_langs .langs_item {
   font-weight: 700;
   font-size: 1.75rem;
+  margin-top: 3.6875rem;
   cursor: pointer;
 }
 
@@ -2342,7 +2341,7 @@ p {
   }
 
   .burger_menue .burger_menu__links .lang_for_xs .conteiner_langs {
-    left: -120px;
+    left: -150px;
   }
 
   .burger_menue .burger_menu__links .lang_for_xs .langs_item {

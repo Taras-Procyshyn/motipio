@@ -277,10 +277,11 @@ document.addEventListener('click', function (e) {
   var checkBurger = burgers.find(function (burger) {
     return burger.checked === true;
   });
-  var selectedLang = document.querySelector('.selected_lang').className;
 
   if (width < 992) {
-    if (e.target.className === selectedLang) return;
+    if (e.target.className === "selected_lang" || e.target.className === "langs_item") {
+      return;
+    }
   }
 
   if (isCheckBurger) {
@@ -302,7 +303,7 @@ burgers.forEach(function (burger) {
 
     if (chxbox) {
       burgers.forEach(function (burger) {
-        if (!burger.querySelector('input').checked) {
+        if (!burger.querySelector('.burger_checkbox').checked) {
           burger.style.visibility = 'hidden';
         }
       });
@@ -654,7 +655,6 @@ function easeInOutCubic(t, b, c, d) {
 
 var home = document.querySelector('#home');
 var currSection = '';
-console.log(screen.width);
 
 if (home && screen.width > 991) {
   document.querySelector('html').style.overflow = 'hidden';
