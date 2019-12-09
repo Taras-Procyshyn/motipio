@@ -159,7 +159,7 @@ var languages = {
   ru: 'Рус'
 };
 var titles = document.querySelectorAll('.selected_lang');
-var showLists = document.querySelectorAll(".conteiner_langs");
+var showLists = document.querySelectorAll('.conteiner_langs');
 var forms = document.querySelectorAll('.lang');
 var isShowlist = false;
 var lang = getLang();
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 forms.forEach(function (form) {
   return form.addEventListener('click', function (e) {
-    if (_toConsumableArray(e.target.classList).includes("langs_item")) {
+    if (_toConsumableArray(e.target.classList).includes('langs_item')) {
       var currLang = e.target.children[0].className;
       hiddeRadio(currLang);
       setLang(currLang);
@@ -195,14 +195,14 @@ forms.forEach(function (form) {
 document.addEventListener('click', function (e) {
   if (isShowlist) {
     showLists.forEach(function (showList) {
-      showList.classList.remove("show");
-      showList.classList.add("hidden");
+      showList.classList.remove('show');
+      showList.classList.add('hidden');
     });
     isShowlist = false;
-  } else if (_toConsumableArray(e.target.classList).includes("selected_lang")) {
+  } else if (_toConsumableArray(e.target.classList).includes('selected_lang')) {
     showLists.forEach(function (showList) {
-      showList.classList.remove("hidden");
-      showList.classList.add("show");
+      showList.classList.remove('hidden');
+      showList.classList.add('show');
     });
     isShowlist = true;
   }
@@ -212,11 +212,11 @@ function chengeContent(lang) {
   var content = {};
 
   switch (lang) {
-    case "uk":
+    case 'uk':
       content = _lang_uk__WEBPACK_IMPORTED_MODULE_2__["default"];
       break;
 
-    case "ru":
+    case 'ru':
       content = _lang_ru__WEBPACK_IMPORTED_MODULE_1__["default"];
       break;
 
@@ -225,7 +225,7 @@ function chengeContent(lang) {
   }
 
   var _loop = function _loop(key) {
-    var elements = document.querySelectorAll("." + key);
+    var elements = document.querySelectorAll('.' + key);
     elements.forEach(function (element) {
       return element.innerHTML = content[key];
     });
@@ -237,20 +237,20 @@ function chengeContent(lang) {
 }
 
 function hiddeRadio(lang) {
-  var allRadios = document.querySelectorAll("input[type=radio]");
+  var allRadios = document.querySelectorAll('input[type=radio]');
   allRadios.forEach(function (radio) {
     if (_toConsumableArray(radio.classList).includes(lang)) {
-      radio.parentElement.style.display = "none";
+      radio.parentElement.style.display = 'none';
       radio.checked = true;
     } else {
-      radio.parentElement.style.display = "inherit";
+      radio.parentElement.style.display = 'inherit';
       radio.cheked = false;
     }
   });
 }
 
 function getLang() {
-  var lang_selected = window.localStorage.getItem("lang");
+  var lang_selected = window.localStorage.getItem('lang');
 
   if (lang_selected) {
     return JSON.parse(lang_selected);
@@ -259,12 +259,12 @@ function getLang() {
   lang_selected = window.navigator.userLanguage || window.navigator.language;
   lang_selected = lang_selected.slice(0, 2);
   setLang(lang_selected);
-  window.localStorage.setItem("lang", JSON.stringify(lang_selected));
+  window.localStorage.setItem('lang', JSON.stringify(lang_selected));
   return lang_selected;
 }
 
 function setLang(lang) {
-  window.localStorage.setItem("lang", JSON.stringify(lang));
+  window.localStorage.setItem('lang', JSON.stringify(lang));
 }
 
 var isCheckBurger = false;
@@ -272,12 +272,12 @@ document.addEventListener('click', function (e) {
   if (e.target.tagName === 'A') return;
   var width = document.documentElement.clientWidth;
 
-  var burgers = _toConsumableArray(document.querySelectorAll(".burger_checkbox"));
+  var burgers = _toConsumableArray(document.querySelectorAll('.burger_checkbox'));
 
   var checkBurger = burgers.find(function (burger) {
     return burger.checked === true;
   });
-  var selectedLang = document.querySelector(".selected_lang").className;
+  var selectedLang = document.querySelector('.selected_lang').className;
 
   if (width < 992) {
     if (e.target.className === selectedLang) return;
@@ -289,28 +289,26 @@ document.addEventListener('click', function (e) {
     if (checkBurger) {
       checkBurger.checked = false;
     }
-
-    ;
   } else {
     if (checkBurger) {
       isCheckBurger = true;
     }
   }
 });
-var burgers = document.querySelectorAll(".burger_menue");
+var burgers = document.querySelectorAll('.burger_menue');
 burgers.forEach(function (burger) {
   burger.addEventListener('click', function (e) {
     var chxbox = e.target.checked;
 
     if (chxbox) {
       burgers.forEach(function (burger) {
-        if (!burger.querySelector("input").checked) {
-          burger.style.visibility = "hidden";
+        if (!burger.querySelector('input').checked) {
+          burger.style.visibility = 'hidden';
         }
       });
     } else {
       burgers.forEach(function (burger) {
-        burger.style.visibility = "visible";
+        burger.style.visibility = 'visible';
       });
     }
   });
@@ -328,7 +326,7 @@ burgers.forEach(function (burger) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var En = {
-  // header 
+  // header
   burg_home: "Home",
   burg_pro: "PRO",
   burg_download: "Download",
@@ -341,37 +339,37 @@ var En = {
   // - index.html
   about_title: "Professional network",
   about_text: "Communicate with pro's without any borders.",
-  about_link: "How it works",
-  how_it_works__title: "Just send request 👋",
+  about_link: 'How it works',
+  how_it_works__title: 'Just send request 👋',
   how_it_works__text: "PRO's accept request, and you get all personal attention.",
-  how_it_works_viwe_title: "How it works",
-  feache__item_h_1: "Send request to PRO",
-  feache__item_h_2: "Discuss a request ",
-  feache__item_h_3: "Upgrade yourself",
-  feache__item_p_1: "The short type message with a question.",
-  feache__item_p_2: "Get all answers from professional.",
-  feache__item_p_3: "Leave review & rate your expirience.",
-  download_title: "Download IOS, Android",
+  how_it_works_viwe_title: 'How it works',
+  feache__item_h_1: 'Send request to PRO',
+  feache__item_h_2: 'Discuss a request ',
+  feache__item_h_3: 'Upgrade yourself',
+  feache__item_p_1: 'The short type message with a question.',
+  feache__item_p_2: 'Get all answers from professional.',
+  feache__item_p_3: 'Leave review & rate your expirience.',
+  download_title: 'Download IOS, Android',
   // terms_of_service
-  terms_of_service__title: "Terms of service",
-  terms_of_service__comment: "Updated: 30 September 2019",
+  terms_of_service__title: 'Terms of service',
+  terms_of_service__comment: 'Updated: 30 September 2019',
   // support
-  support_title: "Support",
-  support_text_1: "Hi friend 👋 , if you got to this page for a reason, you probably have a question.",
+  support_title: 'Support',
+  support_text_1: 'Hi friend 👋 , if you got to this page for a reason, you probably have a question.',
   support_text_2: " We will be happy to help with your questions, and\n                    resolve it as soon as possible for you. But before\n                    that, if you still decide to send us a request, \n                    be sure that you looked at these pages on which \n                    there is all the necessary information <a href=\"./faq.html\">Frequently\n                    Asked Questions</a> & <a href=\"./terms_of_service.html\">Terms of Service.</a>",
   support_text_3: "If you didn\u2019t find an answer there, send us a request\n                    by selecting the appropriate category of your question.",
   support_text_4: "  We will try to answer and resolve your question as soon as possible.",
-  support_text_5: "Thanks, Motipio team.",
-  support_link_h_1: "Problem with applicationt",
-  support_link_p_1: "iOS & Android app, works bad and other.",
-  support_link_h_2: "Requests & PRO",
-  support_link_p_2: "Complaint or problem with request, etc.",
-  support_link_h_3: "I’m a PRO, need a help",
-  support_link_p_3: "ayout, complaints, blocking and other.",
+  support_text_5: 'Thanks, Motipio team.',
+  support_link_h_1: 'Problem with applicationt',
+  support_link_p_1: 'iOS & Android app, works bad and other.',
+  support_link_h_2: 'Requests & PRO',
+  support_link_p_2: 'Complaint or problem with request, etc.',
+  support_link_h_3: 'I’m a PRO, need a help',
+  support_link_p_3: 'ayout, complaints, blocking and other.',
   // pro
-  monetize_title: "Monetize your professional skills, experience and famous",
-  monetize_text: "By communicating with people from over the World without any borders",
-  join_to_us_title: "How join to us",
+  monetize_title: 'Monetize your professional skills, experience and famous',
+  monetize_text: 'By communicating with people from over the World without any borders',
+  join_to_us_title: 'How join to us',
   join_to_us_text_1: "Motipio open to new professionals, who really have skills, life expirince, what they can\n                    share with people. Or you want to mentoring or coaching people, make them better and\n                    space around. Also, you can communicate with your fans, solve overloaded DM on your\n                    social media.",
   join_to_us_text_2: " We will be happy if you join to us, for making our World a better place to live for all\n                         of us.",
   join_to_us_btn: "Enroll as PRO",
@@ -420,10 +418,10 @@ var En = {
   tag__item_6: "More...",
   join_to_us_btn_2: "Join to Motipio as PRO, now!",
   // privacy policy
-  privacy_policy_title: "Privacy Policy",
+  privacy_policy_title: 'Privacy Policy',
   rivacy_policy_comment: " Updated: 30 September 2019",
   //cookie
-  cookie_policy_title: "Cookie Policy",
+  cookie_policy_title: 'Cookie Policy',
   cookie_policy_comment: " Updated: 30 September 2019",
   //faq
   faq_title: "Frequently Asked Questions",
@@ -440,12 +438,12 @@ var En = {
   faq_q_5: "Q: How do I contact the Motipio team?",
   faq_a_5: "A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n                and attending to a whale, there is much running\n                backwards and forwards among the crew. Now hands\n                are wanted here, and then again hands are wanted\n                there. There is no staying in any one place; for\n                at one and the same time everything has to be done\n                everywhere. It is much the same with him who endeavors\n                the desc.",
   // footer
-  footer_link_1: "Terms of service",
-  footer_link_2: "Privacy Policy",
-  footer_link_3: "FAQ",
-  footer_link_4: "Support",
-  footer_copyright: "Copyright 2019.",
-  // chat 
+  footer_link_1: 'Terms of service',
+  footer_link_2: 'Privacy Policy',
+  footer_link_3: 'FAQ',
+  footer_link_4: 'Support',
+  footer_copyright: 'Copyright 2019.',
+  // chat
   chat_msg_user_1: "Hi Steve! How to be productive and positive at the same time? What a secret?!",
   chat_msg_steve_1: "\uD83D\uDC4B Oh! What a great and deep question! Hope that my answers will help you. But first...",
   chat_msg_steve_2: "Could you tell me something about yourself?",
@@ -654,15 +652,14 @@ function easeInOutCubic(t, b, c, d) {
   return c / 2 * (t * t * t + 2) + b;
 }
 
-;
-var home = document.querySelector("#home");
-var currSection = "";
+var home = document.querySelector('#home');
+var currSection = '';
 console.log(screen.width);
 
 if (home && screen.width > 991) {
-  document.querySelector('html').style.overflow = "hidden";
+  document.querySelector('html').style.overflow = 'hidden';
 
-  var sections = _toConsumableArray(document.querySelectorAll("section"));
+  var sections = _toConsumableArray(document.querySelectorAll('section'));
 
   var reverseSections = _toConsumableArray(sections).reverse();
 
