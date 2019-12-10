@@ -818,7 +818,9 @@ p {
 .lang .conteiner_langs .langs_item {
   font-weight: 700;
   font-size: 1.75rem;
-  margin-top: 3.6875rem;
+  margin-top: 2.4375rem;
+  padding: 0 30px;
+  padding-top: 20px;
   cursor: pointer;
 }
 
@@ -837,7 +839,6 @@ p {
 
 .burger_menue {
   position: relative;
-  z-index: 1;
 }
 
 .burger_menue input {
@@ -850,6 +851,12 @@ p {
   cursor: pointer;
   opacity: 0;
   z-index: 2;
+}
+
+.burger_menue input:checked {
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 .burger_menue input:checked ~ span {
@@ -885,7 +892,6 @@ p {
   top: -0.3125rem;
   background: #000;
   border-radius: 0.3125rem;
-  z-index: -1;
   transform-origin: 0px 0px;
   transition: transform 0.5s 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s 0.2s ease;
 }
@@ -942,7 +948,7 @@ p {
 .burger_menue .burger_menu__links .burger_menu__navigation_link li a {
   font-size: 1.375rem;
   font-weight: 500;
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 6.25rem;
 }
 
 .burger_menue .burger_menu__links .burger_menu__navigation_link li a:hover {
@@ -1048,16 +1054,12 @@ p {
   padding-left: 2.5rem;
 }
 
-.about .content {
-  position: relative;
-}
-
 .about .content .description {
   position: relative;
 }
 
 .about .content .viwe {
-  height: 115vh;
+  height: 110vh;
   background: #0c1723;
   z-index: -1;
   border-bottom: none;
@@ -1084,9 +1086,9 @@ p {
   position: absolute;
   bottom: 1.5625rem;
   left: 5rem;
-  background: url("../img/svg/stars.svg");
-  background-size: cover;
-  width: 6.5625rem;
+  background: no-repeat url("../img/svg/stars.svg");
+  background-size: contain;
+  width: 6.6875rem;
   height: 0.9375rem;
 }
 
@@ -1247,6 +1249,7 @@ p {
 .how_it_works {
   color: #fff;
   position: relative;
+  height: 101vh;
 }
 
 .how_it_works .content {
@@ -1266,12 +1269,11 @@ p {
 
 .how_it_works .content .description .how_it_works__text {
   margin-bottom: 0;
-  margin-top: 2.5vh;
+  margin-top: 3.75rem;
 }
 
 .how_it_works .content .viwe {
   box-sizing: border-box;
-  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1384,9 +1386,8 @@ p {
   position: relative;
 }
 
-.download .content {
-  display: flex;
-  flex-direction: row;
+.download {
+  position: relative;
 }
 
 .download .title {
@@ -1401,11 +1402,6 @@ p {
   width: 15rem;
   height: auto;
   margin-bottom: 2.55812rem;
-}
-
-.download .viwe {
-  height: 40vh;
-  width: 50%;
 }
 
 .pro_title {
@@ -1478,6 +1474,7 @@ p {
   margin: 0 1.5625rem 0 1.5625rem;
   border-bottom: 0.125rem solid rgba(255, 255, 255, 0.1);
   background: no-repeat url("../img/smith.png");
+  background-size: 15%;
   background-position: 0 center;
 }
 
@@ -1642,6 +1639,15 @@ p {
 
 .join_to_us .viwe .action .action_item:nth-child(1) {
   padding-bottom: 1.5625rem;
+}
+
+.join_to_us .viwe .action .action_item:nth-child(1) a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .join_to_us .viwe .action .action_item:nth-child(1)::before {
@@ -1945,8 +1951,9 @@ p {
 #receive_requests {
   box-sizing: border-box;
   margin-top: 11vh;
-  background: linear-gradient(180deg, #0c1723 64.05%, rgba(0, 0, 0, 0.5) 125.01%), #0c1723;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 64.05%, rgba(0, 0, 0, 0.5) 125.01%), #0C1723;
   color: white;
+  z-index: -1;
 }
 
 .receive_requests .viwe {
@@ -1982,6 +1989,11 @@ p {
 
 .receive_requests .description .pro_text a:hover {
   text-decoration: underline;
+}
+
+#let_join {
+  background: linear-gradient(180deg, #09111A 0%, #000000 97.44%);
+  color: #fff;
 }
 
 .let_join {
@@ -2042,12 +2054,10 @@ p {
   letter-spacing: -0.434118px;
   text-align: center;
   margin: 0 1.875rem 1.875rem 0;
+  line-height: 2.9375rem;
+  height: 2.75rem;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #000000;
   border-radius: 0.5rem;
-}
-
-.let_join .description .join_to_us__tags .tags__list .tag__item:last-child {
-  background: none;
 }
 
 .let_join .description .btn {
@@ -2140,10 +2150,6 @@ p {
   margin-bottom: 8rem;
 }
 
-#support {
-  height: 100vh;
-}
-
 .support p {
   margin: 1rem 0;
 }
@@ -2154,6 +2160,7 @@ p {
 
 .support .content {
   display: flex;
+  padding-bottom: 0.625rem;
 }
 
 .support .content .description .text {
@@ -2208,6 +2215,14 @@ p {
   line-height: 1.375rem;
   color: #9297A2;
   font-size: 300;
+}
+
+.support .footer .footer_xl {
+  position: static;
+}
+
+.support .footer .footer_xl .footer__navigation {
+  margin-top: 0;
 }
 
 .doc {
@@ -2556,6 +2571,7 @@ p {
   }
 
   .how_it_works .content .viwe {
+    position: relative;
     width: 100%;
     overflow: visible;
     left: 0;
@@ -2587,7 +2603,7 @@ p {
     left: calc(50% - 110px);
     padding-left: 0;
     background-position: 30px 5px;
-    bottom: -52px;
+    bottom: -192px;
   }
 
   .how_it_works .section_link .how_it_works__selection_link {
@@ -2596,16 +2612,16 @@ p {
     background-position: 13px;
   }
 
-  #download {
-    background: none;
-  }
-
   .download {
     height: max-content;
   }
 
   .download .header {
     display: none;
+  }
+
+  .download .content {
+    display: inherit;
   }
 
   .download .description {
@@ -2639,10 +2655,6 @@ p {
     width: 12.5rem;
     height: auto;
     margin-bottom: 1.81313rem;
-  }
-
-  .download .viwe {
-    display: none;
   }
 
   .pro_title {
@@ -2798,7 +2810,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1090px;
+    height: 1080px;
     padding-top: 120px;
   }
 
@@ -2835,7 +2847,7 @@ p {
   }
 
   .let_join .let_join__title {
-    margin-top: 110px;
+    padding-top: 110px;
     height: auto;
   }
 
@@ -2878,7 +2890,7 @@ p {
   }
 
   .let_join .description .join_to_us__tags .tags__list .tag__item {
-    padding: 11px;
+    padding: 0 0.625rem;
     margin: 0 9px 30px 0;
   }
 
@@ -2965,6 +2977,10 @@ p {
     background: none;
   }
 
+  .support .title {
+    margin-top: 0;
+  }
+
   .support .content {
     flex-direction: column;
   }
@@ -2985,7 +3001,7 @@ p {
   }
 
   .support .content .viwe .bg_smoll {
-    top: 1048px;
+    top: 928px;
   }
 
   .support .content .viwe .suport_list .item {
@@ -3120,6 +3136,7 @@ p {
   }
 
   .title {
+    word-wrap: wrap;
     font-size: 58px;
     margin-bottom: 3.75rem;
   }
@@ -3168,6 +3185,7 @@ p {
   .how_it_works .section_link {
     width: 220px;
     margin-top: 0;
+    bottom: -150px;
     left: calc(50% - 110px);
   }
 
@@ -3178,7 +3196,7 @@ p {
   }
 
   .receive_requests {
-    height: 1178px;
+    height: 1077px;
   }
 
   .receive_requests .viwe {
@@ -3186,7 +3204,6 @@ p {
   }
 
   .let_join .description .join_to_us__tags .tags__list .tag__item {
-    padding: 0.6875rem;
     margin: 0 0.5625rem 1.875rem 0;
   }
 
@@ -3226,7 +3243,7 @@ p {
   }
 
   .support .content .viwe .bg_smoll {
-    top: 1087px;
+    top: 967px;
   }
 
   .support .content .viwe .suport_list .item {
@@ -3326,6 +3343,7 @@ p {
   }
 
   .how_it_works .section_link {
+    bottom: -90px;
     left: calc(50% - 120px);
   }
 
@@ -3338,7 +3356,7 @@ p {
   }
 
   .support .content .viwe .bg_smoll {
-    top: 990px;
+    top: 870px;
   }
 }
 
@@ -3375,6 +3393,7 @@ p {
     top: 3.75rem;
     left: -3.4375rem;
     height: 55%;
+    width: 50%;
   }
 
   .burger_menue .burger_menu__links .burger_menu__navigation_link li a {
@@ -3475,6 +3494,8 @@ p {
   }
 
   .about {
+    height: 100vh;
+    position: relative;
     margin-bottom: 0px;
   }
 
@@ -3502,9 +3523,9 @@ p {
     flex-direction: column;
     align-items: center;
     width: 400px;
-    position: relative;
-    top: -11.5625rem;
-    left: -70px;
+    position: absolute;
+    top: 3vh;
+    left: 49.6%;
     border-radius: 68px;
   }
 
@@ -3559,7 +3580,7 @@ p {
   .about .content .section_link {
     position: absolute;
     display: flex;
-    bottom: 24.5625rem;
+    bottom: 4.375rem;
     margin-bottom: 0;
     width: 100%;
   }
@@ -3590,6 +3611,7 @@ p {
   }
 
   .how_it_works .content .viwe {
+    position: absolute;
     align-items: center;
     height: 96vh;
     border-radius: 0px 0px 68px 68px;
@@ -3597,7 +3619,7 @@ p {
     width: 400px;
     border-top: none;
     overflow: hidden;
-    left: -69px;
+    left: 49.6%;
     top: -12.5rem;
   }
 
@@ -3633,24 +3655,31 @@ p {
   }
 
   .how_it_works .section_link {
+    width: 10.625rem;
     left: 0;
-    bottom: 14.0625rem;
+    bottom: 4.375rem;
   }
 
   #download {
-    background: no-repeat url("../img/svg/main_bg.svg");
-    background-size: 130%;
-    background-position: 50px -250px;
     height: 100vh;
+    background: no-repeat url("../img/svg/main_bg.svg");
+    background-position: 4vw -29vh;
+    background-size: 1400px;
   }
 
   .download .header {
     display: flex;
   }
 
+  .download .content {
+    display: flex;
+    flex-direction: row;
+  }
+
   .download .description {
     align-items: flex-start;
-    width: 540px;
+    width: 33.75rem;
+    margin-top: 0px;
   }
 
   .download .logo_xs {
@@ -3831,7 +3860,7 @@ p {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 46.875rem;
+    height: 50.9375rem;
     padding-top: 6.6875rem;
   }
 
@@ -3866,7 +3895,7 @@ p {
   }
 
   .let_join .let_join__title {
-    margin-top: 12.5rem;
+    padding-top: 7.5rem;
     height: auto;
   }
 
@@ -3945,6 +3974,7 @@ p {
   .support .content .description .text {
     font-size: 1rem;
     line-height: 1.375rem;
+    margin-bottom: 0;
   }
 
   .support .content .viwe {
@@ -4170,9 +4200,9 @@ p {
   }
 
   .about .content .viwe {
-    position: relative;
-    top: -17.8125rem;
-    left: 0;
+    position: absolute;
+    top: 3vh;
+    left: 52.7%;
     border-radius: 5.5rem;
   }
 
@@ -4225,7 +4255,7 @@ p {
   }
 
   .about .content .section_link {
-    bottom: 34.25rem;
+    bottom: 5.625rem;
   }
 
   .how_it_works .content {
@@ -4243,7 +4273,7 @@ p {
   .how_it_works .content .viwe {
     padding: 0;
     border-radius: 0px 0px 5rem 5rem;
-    left: 0;
+    left: 52.7%;
     top: -20.3125rem;
   }
 
@@ -4280,18 +4310,20 @@ p {
   }
 
   .how_it_works .section_link {
-    bottom: 21.5625rem;
+    bottom: 5.625rem;
   }
 
   #download {
-    background: no-repeat url("../img/svg/main_bg.svg");
-    background-size: 100rem;
-    background-position: 28.125rem -28.125rem;
-    height: 100vh;
+    background-size: 106.25rem;
   }
 
-  .download .viwe {
-    display: block;
+  #download {
+    background-position-x: 9.375rem;
+    background-position-y: -20rem;
+  }
+
+  .download .description {
+    margin-top: 120px;
   }
 
   .monetize .description {
@@ -4422,7 +4454,7 @@ p {
 
   .receive_requests {
     padding-top: 9.1875rem;
-    height: 52.5rem;
+    height: 59.875rem;
   }
 
   .receive_requests .description {
@@ -4442,7 +4474,7 @@ p {
   }
 
   .let_join .let_join__title {
-    margin-top: 15.625rem;
+    padding-top: 7.5rem;
     height: auto;
   }
 
@@ -4504,17 +4536,73 @@ p {
   .support .content .viwe .suport_list .bg_lg {
     z-index: -1;
     position: absolute;
-    width: 33.75rem;
-    height: 53.875rem;
-    top: -6.25rem;
-    left: 0;
-    border-radius: 3.75rem;
+    width: 31.25rem;
+    height: 66.375rem;
+    top: -8.125rem;
+    left: 1.1875rem;
+    border-radius: 5rem;
     background: #F2F2F2;
   }
 
   .support .content .viwe .suport_list .item {
     background-position: 23.75rem center;
     width: 26.25rem;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  #download {
+    background-position-x: 12.5rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 87.5rem) {
+  #download {
+    background-position-x: 15.625rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  #download {
+    background-position-x: 18.75rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  #download {
+    background-position-x: 21.875rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 106.25rem) {
+  #download {
+    background-position-x: 25rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 112.5rem) {
+  #download {
+    background-position-x: 28.125rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 118.75rem) {
+  #download {
+    background-position-x: 31.25rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (min-width: 125rem) {
+  #download {
+    background-position-x: 34.375rem;
+    background-position-y: -20rem;
   }
 }
 
@@ -4549,13 +4637,25 @@ p {
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 90%;
+    font-size: 85%;
   }
 
   .receive_requests .viwe .contein_img {
     top: -9.375rem;
     width: 56.25rem;
     height: 56.25rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 1200px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 95%;
   }
 }
 
@@ -4568,6 +4668,10 @@ p {
 @media screen and (min-width: 3960px) {
   html {
     font-size: 200%;
+  }
+
+  .receive_requests {
+    height: 57.8125rem;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

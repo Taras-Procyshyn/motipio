@@ -108,7 +108,6 @@ function cookie() {
   modal.classList.remove("hidden");
   modal.classList.add("show");
   var toggle = modal.querySelector(".cookie_toggle");
-  console.log(toggle);
   toggle.addEventListener('click', function () {
     window.sessionStorage.setItem("cookie", true);
     modal.classList.remove("show");
@@ -265,18 +264,23 @@ function getLang() {
 
 function setLang(lang) {
   window.localStorage.setItem('lang', JSON.stringify(lang));
-}
+} // uncheked burger menue when clik enywhere
+
 
 var isCheckBurger = false;
 document.addEventListener('click', function (e) {
-  if (e.target.tagName === 'A') return;
   var width = document.documentElement.clientWidth;
 
-  var burgers = _toConsumableArray(document.querySelectorAll('.burger_checkbox'));
+  var burgerMenues = _toConsumableArray(document.querySelectorAll(".burger_menue"));
 
+  var burgers = burgerMenues.map(function (burgerMenue) {
+    return burgerMenue.querySelector('.burger_checkbox');
+  });
   var checkBurger = burgers.find(function (burger) {
     return burger.checked === true;
-  });
+  }); // exept link
+
+  if (e.target.tagName === 'A') return; // exept in small screen, we can clik in select lang
 
   if (width < 992) {
     if (e.target.className === "selected_lang" || e.target.className === "langs_item") {
@@ -284,35 +288,16 @@ document.addEventListener('click', function (e) {
     }
   }
 
-  if (isCheckBurger) {
-    isCheckBurger = false;
+  if (checkBurger) {
+    if (isCheckBurger) {
+      burgers.forEach(function (burger) {
+        return burger.checked = false;
+      });
+      isCheckBurger = false;
+    }
 
-    if (checkBurger) {
-      checkBurger.checked = false;
-    }
-  } else {
-    if (checkBurger) {
-      isCheckBurger = true;
-    }
+    if (checkBurger.checked) isCheckBurger = true;
   }
-});
-var burgers = document.querySelectorAll('.burger_menue');
-burgers.forEach(function (burger) {
-  burger.addEventListener('click', function (e) {
-    var chxbox = e.target.checked;
-
-    if (chxbox) {
-      burgers.forEach(function (burger) {
-        if (!burger.querySelector('.burger_checkbox').checked) {
-          burger.style.visibility = 'hidden';
-        }
-      });
-    } else {
-      burgers.forEach(function (burger) {
-        burger.style.visibility = 'visible';
-      });
-    }
-  });
 });
 
 /***/ }),
@@ -350,7 +335,7 @@ var En = {
   feache__item_p_1: 'The short type message with a question.',
   feache__item_p_2: 'Get all answers from professional.',
   feache__item_p_3: 'Leave review & rate your expirience.',
-  download_title: 'Download IOS, Android',
+  download_title: 'Download<br> IOS, Android',
   // terms_of_service
   terms_of_service__title: 'Terms of service',
   terms_of_service__comment: 'Updated: 30 September 2019',
@@ -385,7 +370,7 @@ var En = {
   action_item_li_5: "Request details (cost per request and details offer)",
   action_item_h_3: "Set a payout method",
   action_item_h4_3: "Partnering with Payoneer",
-  action_item_p_3: "Great list of ways to withdrawals your earnigs\n                    with low fees on transfers to card,\n                    bank and other. <a href=\"#\">Learn more about</a>",
+  action_item_p_3: " Great list of ways to withdrawals your earnigs\n  with low fees on transfers to card,\n  bank and other. <a href=\"https://www.payoneer.com/\" target=\"_blank\">Learn more about</a>",
   hycw_title: "How you can work on Motipio platform",
   benefit_item_h_1: "Consulting service",
   benefit_item_p_1: "So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two.",
@@ -416,7 +401,6 @@ var En = {
   tag__item_3: "Beauty & Fashion",
   tag__item_4: "Sport & Health",
   tag__item_5: "Media & Social Media",
-  tag__item_6: "More...",
   join_to_us_btn_2: "Join to Motipio as PRO, now!",
   // privacy policy
   privacy_policy_title: 'Privacy Policy',
