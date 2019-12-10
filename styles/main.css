@@ -4659,11 +4659,19 @@ p {
   #download {
     background-size: 98.125rem;
   }
+
+  .receive_requests {
+    height: 59.375rem;
+  }
 }
 
 @media screen and (min-width: 2880px) {
   html {
     font-size: 150%;
+  }
+
+  .receive_requests {
+    height: 58.25rem;
   }
 }
 
