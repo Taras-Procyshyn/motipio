@@ -4321,7 +4321,7 @@ p {
   }
 
   .download .description {
-    margin-top: 120px;
+    margin-top: 7.5rem;
   }
 
   .monetize .description {
@@ -4550,56 +4550,56 @@ p {
 
 @media screen and (min-width: 81.25rem) {
   #download {
-    background-position-x: 15.625rem;
+    background-position-x: 16.875rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 87.5rem) {
   #download {
-    background-position-x: 18.75rem;
+    background-position-x: 21.25rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 93.75rem) {
   #download {
-    background-position-x: 21.875rem;
+    background-position-x: 25.625rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 100rem) {
   #download {
-    background-position-x: 25rem;
+    background-position-x: 30rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 106.25rem) {
   #download {
-    background-position-x: 28.125rem;
+    background-position-x: 34.375rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 112.5rem) {
   #download {
-    background-position-x: 31.25rem;
+    background-position-x: 38.75rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 118.75rem) {
   #download {
-    background-position-x: 34.375rem;
+    background-position-x: 43.125rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 125rem) {
   #download {
-    background-position-x: 37.5rem;
+    background-position-x: 47.5rem;
     background-position-y: -20rem;
   }
 }
