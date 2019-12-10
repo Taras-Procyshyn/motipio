@@ -4655,6 +4655,10 @@ p {
   html {
     font-size: 95%;
   }
+
+  #download {
+    background-size: 98.125rem;
+  }
 }
 
 @media screen and (min-width: 2880px) {
