@@ -1495,8 +1495,6 @@ p {
 .monetize .viwe .person .row_1 .avatar .rate {
   width: 6.5625rem;
   height: 0.9375rem;
-  background: no-repeat url("../img/svg/pro_rate.svg");
-  background-size: cover;
 }
 
 .monetize .viwe .person .row_1 .erned {
