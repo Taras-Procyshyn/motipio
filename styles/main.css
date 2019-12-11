@@ -1238,10 +1238,6 @@ p {
   animation: 1.5s typing_spiner infinite cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.9999s;
 }
 
-.about .content .section_link {
-  margin-bottom: 120px;
-}
-
 #how_it_works {
   background: #0c1723;
 }
@@ -1249,7 +1245,6 @@ p {
 .how_it_works {
   color: #fff;
   position: relative;
-  height: 101vh;
 }
 
 .how_it_works .content {
@@ -2493,7 +2488,6 @@ p {
 
   .section_link {
     width: 90%;
-    margin-top: 13%;
     text-align: center;
   }
 
@@ -2512,7 +2506,8 @@ p {
   }
 
   .about {
-    margin-bottom: 120px;
+    position: relative;
+    padding-bottom: 7.5rem;
   }
 
   .about .content {
@@ -2543,7 +2538,16 @@ p {
     display: none;
   }
 
+  .about .content .section_link {
+    position: absolute;
+    bottom: 70px;
+  }
+
   #how_it_works {
+    height: 1196px;
+  }
+
+  .how_it_works {
     height: 1196px;
   }
 
@@ -2601,13 +2605,13 @@ p {
     left: calc(50% - 110px);
     padding-left: 0;
     background-position: 30px 5px;
-    bottom: -192px;
+    bottom: 70px;
   }
 
   .how_it_works .section_link .how_it_works__selection_link {
     display: inline-block;
     width: 100%;
-    background-position: 13px;
+    background-position: 0.8125rem;
   }
 
   .download {
@@ -2959,8 +2963,8 @@ p {
   }
 
   .let_join .description .footer_xs_pro .footer_copyright {
-    font-size: 12px;
-    padding-bottom: 30px;
+    font-size: 0.75rem;
+    padding-bottom: 1.875rem;
   }
 
   #pro_footer {
@@ -3051,7 +3055,7 @@ p {
 
 @media screen and (min-width: 20rem) and (min-width: 36rem) {
   .download .downloads_icons {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
   }
 }
 
@@ -3161,10 +3165,14 @@ p {
   }
 
   .about .content .section_link {
-    margin-bottom: 18%;
+    bottom: 50px;
   }
 
   #how_it_works {
+    height: 1160px;
+  }
+
+  .how_it_works {
     height: 1160px;
   }
 
@@ -3183,7 +3191,7 @@ p {
   .how_it_works .section_link {
     width: 220px;
     margin-top: 0;
-    bottom: -150px;
+    bottom: 50px;
     left: calc(50% - 110px);
   }
 
@@ -3233,11 +3241,11 @@ p {
   }
 
   .let_join .description .footer_xs_pro .pro_footer_text li a {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .let_join .description .footer_xs_pro .footer_copyright {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .support .content .viwe .bg_smoll {
@@ -3340,9 +3348,13 @@ p {
     height: 1110px;
   }
 
+  .how_it_works {
+    height: 1110px;
+  }
+
   .how_it_works .section_link {
-    bottom: -90px;
-    left: calc(50% - 120px);
+    bottom: 90px;
+    width: 10.625rem;
   }
 
   .download .description {
@@ -3457,7 +3469,7 @@ p {
 
   .title {
     text-align: left;
-    font-size: 62px;
+    font-size: 3.875rem;
   }
 
   .text {
@@ -3520,48 +3532,48 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 25rem;
     position: absolute;
     top: 3vh;
     left: 49.6%;
-    border-radius: 68px;
+    border-radius: 4.25rem;
   }
 
   .about .content .viwe .top_of_viwe {
-    margin: 0 20px;
-    padding: 25px 0 30px 0;
+    margin: 0 1.25rem;
+    padding: 1.5625rem 0 1.875rem 0;
   }
 
   .about .content .viwe .top_of_viwe .head {
-    width: 300px;
-    border-radius: 22px;
-    height: 90px;
-    background-position: 10px center;
+    width: 18.75rem;
+    border-radius: 1.375rem;
+    height: 5.625rem;
+    background-position: 0.625rem center;
   }
 
   .about .content .viwe .top_of_viwe .head:after {
-    left: 77px;
+    left: 4.8125rem;
   }
 
   .about .content .viwe .top_of_viwe .head .steve_name {
-    padding-left: 65px;
-    padding-right: 10px;
-    font-size: 16px;
+    padding-left: 4.0625rem;
+    padding-right: 0.625rem;
+    font-size: 1rem;
   }
 
   .about .content .viwe .top_of_viwe .head .per {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .about .content .viwe .top_of_viwe .head .per p {
-    font-size: 12px;
-    margin-left: 3px;
+    font-size: 0.75rem;
+    margin-left: 0.1875rem;
   }
 
   .about .content .viwe .chat {
-    transform: translateY(352px);
+    transform: translateY(22rem);
     width: calc(100% - 40px);
-    font-size: 14px;
+    font-size: 0.875rem;
     animation: move_chat_lg 20s 3s linear forwards;
   }
 
@@ -3584,6 +3596,10 @@ p {
   }
 
   #how_it_works {
+    height: 101vh;
+  }
+
+  .how_it_works {
     height: 101vh;
   }
 
@@ -3612,9 +3628,9 @@ p {
     position: absolute;
     align-items: center;
     height: 96vh;
-    border-radius: 0px 0px 68px 68px;
+    border-radius: 0px 0px 4.25rem 4.25rem;
     border: 1.5625rem solid #19232f;
-    width: 400px;
+    width: 25rem;
     border-top: none;
     overflow: hidden;
     left: 49.6%;
@@ -3623,10 +3639,10 @@ p {
 
   .how_it_works .content .viwe .viwe__title {
     text-align: center;
-    padding: 20px 0 39px 0;
+    padding: 1.25rem 0 2.4375rem 0;
     font-size: 1.75rem;
-    width: 300px;
-    margin: 22px 35px 0;
+    width: 18.75rem;
+    margin: 1.375rem 2.1875rem 0;
   }
 
   .how_it_works .content .viwe .featches {
@@ -3635,7 +3651,7 @@ p {
 
   .how_it_works .content .viwe .featches .feache__item {
     height: 6.25rem;
-    padding: 15px 0 25px 100px;
+    padding: 0.9375rem 0 1.5625rem 6.25rem;
     margin-bottom: 2.5rem;
     opacity: 0;
   }
@@ -3662,7 +3678,7 @@ p {
     height: 100vh;
     background: no-repeat url("../img/svg/main_bg.svg");
     background-position: 4vw -29vh;
-    background-size: 1400px;
+    background-size: 87.5rem;
   }
 
   .download .header {
@@ -3708,21 +3724,21 @@ p {
   }
 
   .monetize .description .pro_title {
-    font-size: 44px;
-    margin-top: 50px;
+    font-size: 2.75rem;
+    margin-top: 3.125rem;
   }
 
   .monetize .viwe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 480px;
-    height: 550px;
-    border-radius: 75px 75px 0px 0px;
+    width: 30rem;
+    height: 34.375rem;
+    border-radius: 4.6875rem 4.6875rem 0px 0px;
   }
 
   .monetize .viwe .text {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   .monetize .viwe .person {
@@ -3740,7 +3756,7 @@ p {
   }
 
   .monetize .viwe .person .row_1 .erned {
-    padding-left: 5px;
+    padding-left: 0.3125rem;
   }
 
   .monetize .viwe .person .row_1 .erned .number {
@@ -3749,32 +3765,32 @@ p {
   }
 
   .monetize .viwe .person .row_2 {
-    padding: 25px 0 27px 0;
+    padding: 1.5625rem 0 1.6875rem 0;
   }
 
   .monetize .viwe .person .row_2 .buttons .btn_decline {
-    line-height: 35px;
-    width: 140px;
-    height: 35px;
-    font-size: 16px;
-    border-radius: 17px;
+    line-height: 2.1875rem;
+    width: 8.75rem;
+    height: 2.1875rem;
+    font-size: 1rem;
+    border-radius: 1.0625rem;
   }
 
   .monetize .viwe .person .row_2 .buttons .btn_accept {
-    line-height: 35px;
-    width: 140px;
-    height: 35px;
-    font-size: 16px;
-    border-radius: 17px;
+    line-height: 2.1875rem;
+    width: 8.75rem;
+    height: 2.1875rem;
+    font-size: 1rem;
+    border-radius: 1.0625rem;
   }
 
   .monetize .viwe .statistic {
-    height: 40px;
+    height: 2.5rem;
   }
 
   .join_to_us .pro_title {
     margin-bottom: 0;
-    line-height: 48px;
+    line-height: 3rem;
   }
 
   .join_to_us .content {
@@ -3782,22 +3798,22 @@ p {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 575px;
+    height: 35.9375rem;
   }
 
   .join_to_us .description {
     order: 1;
     align-items: flex-start;
-    width: 400px;
+    width: 25rem;
     margin-bottom: 0px;
   }
 
   .join_to_us .description .pro_text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-top: 24px;
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.875rem;
   }
 
   .join_to_us .viwe {
@@ -3944,10 +3960,6 @@ p {
     line-height: 6.25rem;
   }
 
-  #support {
-    overflow: hidden;
-  }
-
   .support {
     height: calc(100vh - rem(186.5));
     box-sizing: border-box;
@@ -3966,7 +3978,7 @@ p {
   }
 
   .support .content .description {
-    width: 450px;
+    width: 28.125rem;
   }
 
   .support .content .description .text {
@@ -3988,14 +4000,14 @@ p {
     position: absolute;
     width: 28.125rem;
     height: 41.375rem;
-    top: -100px;
+    top: -6.25rem;
     left: 0;
     border-radius: 3.75rem;
     background: #F2F2F2;
   }
 
   .support .content .viwe .suport_list .item {
-    background-position: 340px center;
+    background-position: 21.25rem center;
     width: 380px;
   }
 
@@ -4316,7 +4328,7 @@ p {
   }
 
   #download {
-    background-position-x: 12.5rem;
+    background-position-x: 9.375rem;
     background-position-y: -20rem;
   }
 
@@ -4548,58 +4560,130 @@ p {
   }
 }
 
+@media screen and (max-height: 800px) and (min-width: 75rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 28.125rem;
+    background-position-y: -20rem;
+  }
+}
+
 @media screen and (min-width: 81.25rem) {
   #download {
-    background-position-x: 16.875rem;
+    background-position-x: 12.8125rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 81.25rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 31.875rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 87.5rem) {
   #download {
-    background-position-x: 21.25rem;
+    background-position-x: 16.25rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 87.5rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 35.625rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 93.75rem) {
   #download {
-    background-position-x: 25.625rem;
+    background-position-x: 19.6875rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 93.75rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 39.375rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 100rem) {
   #download {
-    background-position-x: 30rem;
+    background-position-x: 23.125rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 100rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 43.125rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 106.25rem) {
   #download {
-    background-position-x: 34.375rem;
+    background-position-x: 26.5625rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 106.25rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 46.875rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 112.5rem) {
   #download {
-    background-position-x: 38.75rem;
+    background-position-x: 30rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 112.5rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 50.625rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 118.75rem) {
   #download {
-    background-position-x: 43.125rem;
+    background-position-x: 33.4375rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 118.75rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 54.375rem;
     background-position-y: -20rem;
   }
 }
 
 @media screen and (min-width: 125rem) {
   #download {
-    background-position-x: 47.5rem;
+    background-position-x: 36.875rem;
+    background-position-y: -20rem;
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 125rem) {
+  #download {
+    background-size: 91.875rem;
+    background-position-x: 58.125rem;
     background-position-y: -20rem;
   }
 }
@@ -4622,99 +4706,54 @@ p {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .receive_requests .viwe .contein_img {
-    width: 800px;
-    height: 800px;
-    left: -24%;
-    top: -150px;
-    background-position: 0 50px;
-    background-size: 90%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 85%;
-  }
-
-  .receive_requests .viwe .contein_img {
-    top: -9.375rem;
-    width: 56.25rem;
-    height: 56.25rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1200px) {
+@media screen and (max-height: 800px) and (min-width: 992px) {
   html {
     font-size: 70%;
   }
 
   #download {
-    background-size: 91.875rem;
+    background-position: 16vw -29vh;
   }
 }
 
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 75rem) {
-  #download {
-    background-position-x: 26.875rem;
-    background-position-y: -20rem;
+@media screen and (min-width: 992px) and (max-height: 800px) {
+  .how_it_works .content .viwe {
+    top: -16.0625rem;
   }
 }
 
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 81.25rem) {
-  #download {
-    background-position-x: 31.25rem;
-    background-position-y: -20rem;
+@media screen and (min-width: 992px) {
+  .receive_requests .viwe .contein_img {
+    width: 50rem;
+    height: 50rem;
+    left: -24%;
+    top: -9.375rem;
+    background-position: 0 3.125rem;
+    background-size: 90%;
   }
 }
 
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 87.5rem) {
-  #download {
-    background-position-x: 35.625rem;
-    background-position-y: -20rem;
+@media screen and (min-height: 800px) and (min-width: 1200px) {
+  html {
+    font-size: 85%;
   }
 }
 
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 93.75rem) {
-  #download {
-    background-position-x: 40rem;
-    background-position-y: -20rem;
+@media screen and (max-height: 800px) and (min-width: 1200px) {
+  .about .content .section_link {
+    bottom: 3.75rem;
+  }
+
+  .how_it_works .section_link {
+    bottom: 3.75rem;
   }
 }
 
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 100rem) {
-  #download {
-    background-position-x: 44.375rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 106.25rem) {
-  #download {
-    background-position-x: 48.75rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 112.5rem) {
-  #download {
-    background-position-x: 53.125rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 118.75rem) {
-  #download {
-    background-position-x: 57.5rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1200px) and (min-width: 125rem) {
-  #download {
-    background-position-x: 61.875rem;
-    background-position-y: -20rem;
+@media screen and (min-width: 1200px) {
+  .receive_requests .viwe .contein_img {
+    top: -9.375rem;
+    width: 56.25rem;
+    height: 56.25rem;
   }
 }
 
@@ -4729,75 +4768,6 @@ p {
 
   .receive_requests {
     height: 59.375rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) {
-  #download {
-    background-size: 91.875rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 75rem) {
-  #download {
-    background-position-x: 3.125rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 81.25rem) {
-  #download {
-    background-position-x: 7.8125rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 87.5rem) {
-  #download {
-    background-position-x: 12.5rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 93.75rem) {
-  #download {
-    background-position-x: 17.1875rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 100rem) {
-  #download {
-    background-position-x: 21.875rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 106.25rem) {
-  #download {
-    background-position-x: 26.5625rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 112.5rem) {
-  #download {
-    background-position-x: 31.25rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 118.75rem) {
-  #download {
-    background-position-x: 35.9375rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1920px) and (min-width: 125rem) {
-  #download {
-    background-position-x: 40.625rem;
-    background-position-y: -20rem;
   }
 }
 
@@ -4816,75 +4786,8 @@ p {
     font-size: 200%;
   }
 
-  #download {
-    background-size: 98.125rem;
-  }
-
   .receive_requests {
     height: 57.8125rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 75rem) {
-  #download {
-    background-position-x: -18.75rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 81.25rem) {
-  #download {
-    background-position-x: -11.875rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 87.5rem) {
-  #download {
-    background-position-x: -5rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 93.75rem) {
-  #download {
-    background-position-x: 1.875rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 100rem) {
-  #download {
-    background-position-x: 8.75rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 106.25rem) {
-  #download {
-    background-position-x: 15.625rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 112.5rem) {
-  #download {
-    background-position-x: 22.5rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 118.75rem) {
-  #download {
-    background-position-x: 29.375rem;
-    background-position-y: -20rem;
-  }
-}
-
-@media screen and (min-width: 3960px) and (min-width: 125rem) {
-  #download {
-    background-position-x: 36.25rem;
-    background-position-y: -20rem;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
