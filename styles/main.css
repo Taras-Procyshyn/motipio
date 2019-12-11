@@ -1385,10 +1385,6 @@ p {
   position: relative;
 }
 
-.download .title {
-  margin-top: 0;
-}
-
 .download .downloads_icons {
   width: 15rem;
 }
@@ -2103,7 +2099,7 @@ p {
 }
 
 .faq_title {
-  margin: 1.25rem 0 2.3125rem 0;
+  margin: 7.5rem 0 2.3125rem 0;
   text-align: center;
   font-size: 3rem;
 }
@@ -2220,6 +2216,7 @@ p {
 
 .doc {
   flex-direction: column;
+  margin-top: 7.5rem;
   margin-bottom: 7.5rem;
 }
 
@@ -2291,8 +2288,8 @@ p {
   }
 
   .header {
-    padding-top: 62px;
-    padding-bottom: 71px;
+    padding-top: 3.875rem;
+    padding-bottom: 4.4375rem;
   }
 
   .logo {
@@ -2631,6 +2628,10 @@ p {
     flex-direction: column;
     align-items: center;
     margin-top: 0px;
+  }
+
+  .download .title {
+    margin-top: 0;
   }
 
   .download .logo_xs {
@@ -3379,6 +3380,11 @@ p {
     max-width: 58.125rem;
   }
 
+  .header {
+    padding-top: 7.5rem;
+    padding-bottom: 0;
+  }
+
   .lang {
     display: inherit;
   }
@@ -3470,6 +3476,7 @@ p {
   .title {
     text-align: left;
     font-size: 3.875rem;
+    margin-top: 0;
   }
 
   .text {
@@ -3514,6 +3521,7 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 8.625rem;
   }
 
   .about .content .description {
@@ -3610,6 +3618,7 @@ p {
   .how_it_works .content {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 8.625rem;
   }
 
   .how_it_works .content .description {
@@ -3688,6 +3697,7 @@ p {
   .download .content {
     display: flex;
     flex-direction: row;
+    margin-top: 8.625rem;
   }
 
   .download .description {
@@ -3715,7 +3725,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 3.25rem;
+    margin-top: 4.375rem;
     width: 100%;
   }
 
@@ -3961,7 +3971,6 @@ p {
   }
 
   .support {
-    height: calc(100vh - rem(186.5));
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -3996,19 +4005,19 @@ p {
   }
 
   .support .content .viwe .suport_list .bg_lg {
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     width: 28.125rem;
-    height: 41.375rem;
+    height: 43.75rem;
     top: -6.25rem;
     left: 0;
-    border-radius: 3.75rem;
+    border-radius: 3.75rem 3.75rem 0 0;
     background: #F2F2F2;
   }
 
   .support .content .viwe .suport_list .item {
     background-position: 21.25rem center;
-    width: 380px;
+    width: 23.75rem;
   }
 
   .doc .doc__title {
@@ -4051,11 +4060,6 @@ p {
 
   .doc_container {
     max-width: 71.25rem;
-  }
-
-  .header {
-    padding-top: 7.5rem;
-    padding-bottom: 0;
   }
 
   .logo {
@@ -4196,10 +4200,6 @@ p {
     height: 3.625rem;
   }
 
-  .about .content {
-    margin-top: 8.625rem;
-  }
-
   .about .content .description {
     position: static;
     align-items: flex-start;
@@ -4268,10 +4268,6 @@ p {
     bottom: 5.625rem;
   }
 
-  .how_it_works .content {
-    margin-top: 8.625rem;
-  }
-
   .how_it_works .content .description {
     margin-top: 0px;
   }
@@ -4330,10 +4326,6 @@ p {
   #download {
     background-position-x: 9.375rem;
     background-position-y: -20rem;
-  }
-
-  .download .description {
-    margin-top: 7.5rem;
   }
 
   .monetize .description {
@@ -4545,13 +4537,11 @@ p {
 
   .support .content .viwe .suport_list .bg_lg {
     z-index: -1;
-    position: absolute;
     width: 31.25rem;
-    height: 66.375rem;
+    height: 43.75rem;
     top: -8.125rem;
     left: 1.1875rem;
-    border-radius: 5rem;
-    background: #F2F2F2;
+    border-radius: 5rem 5rem 0 0;
   }
 
   .support .content .viwe .suport_list .item {
@@ -4718,7 +4708,7 @@ p {
 
 @media screen and (min-width: 992px) and (max-height: 800px) {
   .how_it_works .content .viwe {
-    top: -16.0625rem;
+    top: -20rem;
   }
 }
 
@@ -4746,6 +4736,12 @@ p {
 
   .how_it_works .section_link {
     bottom: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-height: 800px) {
+  .how_it_works .content .viwe {
+    top: -20.3125rem;
   }
 }
 
@@ -4788,6 +4784,21 @@ p {
 
   .receive_requests {
     height: 57.8125rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  #support {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .support .content .description {
+    padding-bottom: 13.75rem;
+  }
+
+  .support .content .viwe .suport_list .bg_lg {
+    height: 53.125rem;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
