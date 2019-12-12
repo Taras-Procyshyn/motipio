@@ -401,6 +401,7 @@ var En = {
   tag__item_3: "Beauty & Fashion",
   tag__item_4: "Sport & Health",
   tag__item_5: "Media & Social Media",
+  tag__item_6: "More...",
   join_to_us_btn_2: "Join to Motipio as PRO, now!",
   // privacy policy
   privacy_policy_title: 'Privacy Policy',
@@ -553,6 +554,7 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 function showFeature() {
+  if (screen.width < 991) return;
   var featchest = document.querySelector(".featches");
   var howItWorkSection = document.querySelector("#how_it_works");
   document.addEventListener('scroll', function (e) {
