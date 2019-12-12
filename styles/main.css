@@ -2224,12 +2224,6 @@ p {
   margin-top: 0;
 }
 
-.doc {
-  flex-direction: column;
-  margin-top: 7.5rem;
-  margin-bottom: 7.5rem;
-}
-
 .doc .doc__title {
   display: flex;
   flex-direction: column;
@@ -3059,10 +3053,19 @@ p {
 
   .doc {
     width: 100%;
+    flex-direction: column;
+    margin-bottom: 7.5rem;
+    margin-top: 0;
+  }
+
+  .doc .doc__title {
+    align-items: center;
+    margin-bottom: 1.875rem;
   }
 
   .doc .doc__title h1 {
     order: 1;
+    text-align: center;
   }
 
   .doc .doc__title .comment {
@@ -4112,9 +4115,14 @@ p {
     display: none;
   }
 
+  .doc {
+    margin-top: 7.5rem;
+  }
+
   .doc .doc__title {
     margin-top: 4.4375rem;
     align-items: flex-start;
+    margin-bottom: 0rem;
   }
 
   .doc .doc__title h1 {
@@ -5057,18 +5065,16 @@ p {
   html {
     font-size: 200%;
   }
+
+  .receive_requests {
+    height: 59.1875rem;
+  }
 }
 
 @media screen and (min-height: 800px) and (min-width: 3940px) {
   #download {
     background-size: 106.25rem;
     background-position-x: 28.125rem;
-  }
-}
-
-@media screen and (min-width: 3960px) {
-  .receive_requests {
-    height: 57.8125rem;
   }
 }
 
