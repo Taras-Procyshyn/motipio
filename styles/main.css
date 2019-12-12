@@ -3083,11 +3083,12 @@ p {
 
   .doc .cookie_title h1 {
     text-align: center;
-    margin-bottom: 1.25rem;
   }
 
   .doc .cookie_title .comment {
     order: 2;
+    position: relative;
+    top: 0;
     font-size: 1rem;
     line-height: 2.125rem;
     margin: 0;
@@ -4141,6 +4142,7 @@ p {
   }
 
   .doc .cookie_title h1 {
+    margin-bottom: 1.25rem;
     text-align: left;
     line-height: 3.375rem;
   }
