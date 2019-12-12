@@ -2481,7 +2481,7 @@ p {
   .cookie_content .text {
     line-height: 1.125rem;
     text-align: left;
-    font-size: 0.875rem;
+    font-size: 1.8vh;
     width: 85%;
   }
 
@@ -3078,6 +3078,7 @@ p {
   }
 
   .doc .cookie_title {
+    margin-bottom: 1.875rem;
     align-items: center;
   }
 
@@ -4139,6 +4140,7 @@ p {
   .doc .cookie_title {
     margin-top: 4.4375rem;
     align-items: flex-start;
+    margin-bottom: 0rem;
   }
 
   .doc .cookie_title h1 {
