@@ -125,7 +125,12 @@ function cookie() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var home = document.querySelector("#home");
 
+if (home) {
+  var nav = document.querySelector(".nav");
+  nav.style.display = "flex";
+}
 
 /***/ }),
 
@@ -138,9 +143,9 @@ function cookie() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lang_en__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lang/en */ "./src/blocks/modules/header/lang/en.js");
-/* harmony import */ var _lang_ru__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lang/ru */ "./src/blocks/modules/header/lang/ru.js");
-/* harmony import */ var _lang_uk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lang/uk */ "./src/blocks/modules/header/lang/uk.js");
+/* harmony import */ var _js_lang_en__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/lang/en */ "./src/js/lang/en.js");
+/* harmony import */ var _js_lang_ru__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/lang/ru */ "./src/js/lang/ru.js");
+/* harmony import */ var _js_lang_uk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../js/lang/uk */ "./src/js/lang/uk.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -212,15 +217,15 @@ function chengeContent(lang) {
 
   switch (lang) {
     case 'uk':
-      content = _lang_uk__WEBPACK_IMPORTED_MODULE_2__["default"];
+      content = _js_lang_uk__WEBPACK_IMPORTED_MODULE_2__["default"];
       break;
 
     case 'ru':
-      content = _lang_ru__WEBPACK_IMPORTED_MODULE_1__["default"];
+      content = _js_lang_ru__WEBPACK_IMPORTED_MODULE_1__["default"];
       break;
 
     default:
-      content = _lang_en__WEBPACK_IMPORTED_MODULE_0__["default"];
+      content = _js_lang_en__WEBPACK_IMPORTED_MODULE_0__["default"];
   }
 
   var _loop = function _loop(key) {
@@ -302,10 +307,53 @@ document.addEventListener('click', function (e) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header/lang/en.js":
-/*!**********************************************!*\
-  !*** ./src/blocks/modules/header/lang/en.js ***!
-  \**********************************************/
+/***/ "./src/js/import/modules.js":
+/*!**********************************!*\
+  !*** ./src/js/import/modules.js ***!
+  \**********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/cookie/cookie */ "./src/blocks/modules/cookie/cookie.js");
+/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./smoothScrol */ "./src/js/smoothScrol.js");
+/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_smoothScrol__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./showFeature */ "./src/js/showFeature.js");
+/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_showFeature__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _up_btn_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./up_btn.js */ "./src/js/up_btn.js");
+/* harmony import */ var _up_btn_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_up_btn_js__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/js/lang/en.js":
+/*!***************************!*\
+  !*** ./src/js/lang/en.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -489,6 +537,15 @@ var En = {
   // pro
   monetize_title: 'Monetize your professional skills, experience and famous',
   monetize_text: 'By communicating with people from over the World without any borders',
+  phone_row1_text: "you will receive",
+  phone_row2_text: " Request #1:",
+  phone_message: "Hello, I need your advice about my marketing.",
+  btn_decline: "Decline",
+  btn_accept: "Accept",
+  statistic_text1: "Income reqeusts",
+  statistic_text2: "Projected Income",
+  statistic_count1: "1 of 16",
+  statistic_count2: "12 800 USD",
   join_to_us_title: 'How join to us',
   join_to_us_text_1: "Motipio open to new professionals, who really have skills, life expirince, what they can\n                    share with people. Or you want to mentoring or coaching people, make them better and\n                    space around. Also, you can communicate with your fans, solve overloaded DM on your\n                    social media.",
   join_to_us_text_2: " We will be happy if you join to us, for making our World a better place to live for all\n                         of us.",
@@ -558,28 +615,29 @@ var En = {
   faq_q_5: "Q: How do I contact the Motipio team?",
   faq_a_5: "A: In the <a href=\"#\">tumultuous</a> business of cutting-in\n                and attending to a whale, there is much running\n                backwards and forwards among the crew. Now hands\n                are wanted here, and then again hands are wanted\n                there. There is no staying in any one place; for\n                at one and the same time everything has to be done\n                everywhere. It is much the same with him who endeavors\n                the desc.",
   // footer
-  footer_link_1: 'Terms of service',
-  footer_link_2: 'Privacy Policy',
-  footer_link_3: 'FAQ',
-  footer_link_4: 'Support',
-  footer_copyright: 'Copyright 2019.',
+  footer_xs_link_5: "Cookie Policy",
   // chat
+  steve_name: "Steven Armstrong",
+  per_text: 'per request',
   chat_msg_user_1: "Hi Steve! How to be productive and positive at the same time? What a secret?!",
   chat_msg_steve_1: "\uD83D\uDC4B Oh! What a great and deep question! Hope that my answers will help you. But first...",
   chat_msg_steve_2: "Could you tell me something about yourself?",
   chat_msg_steve_3: "\u201CBe productive\u201D, could you explain. What does mean to you these words?",
   chat_msg_user_2: "Sure! Also, thx that you accepted request\u2026\uD83D\uDE0A",
   chat_msg_steve_4: "Thank you too, that having me. I really love helping people \uD83E\uDD17",
-  chat_msg_user_3: "Typing..."
+  typing: "Typing...",
+  // cookie modal
+  cookie_modal_title: "This website uses cookies.",
+  cookie_modal_text: "Before you decide whether to agree to accept and to store first-party\n\tand third-party cookies on your device, please read more about\n\t<a href=\"./cookie_policy.html\">cookie policy here.</a>"
 };
 /* harmony default export */ __webpack_exports__["default"] = (En);
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header/lang/ru.js":
-/*!**********************************************!*\
-  !*** ./src/blocks/modules/header/lang/ru.js ***!
-  \**********************************************/
+/***/ "./src/js/lang/ru.js":
+/*!***************************!*\
+  !*** ./src/js/lang/ru.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -741,10 +799,10 @@ var Ru = {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header/lang/uk.js":
-/*!**********************************************!*\
-  !*** ./src/blocks/modules/header/lang/uk.js ***!
-  \**********************************************/
+/***/ "./src/js/lang/uk.js":
+/*!***************************!*\
+  !*** ./src/js/lang/uk.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -903,49 +961,6 @@ var Uk = {
   address_email: "Email: support@motip.io"
 };
 /* harmony default export */ __webpack_exports__["default"] = (Uk);
-
-/***/ }),
-
-/***/ "./src/js/import/modules.js":
-/*!**********************************!*\
-  !*** ./src/js/import/modules.js ***!
-  \**********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/cookie/cookie */ "./src/blocks/modules/cookie/cookie.js");
-/* harmony import */ var _modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_cookie_cookie__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-/***/ }),
-
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./smoothScrol */ "./src/js/smoothScrol.js");
-/* harmony import */ var _smoothScrol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_smoothScrol__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./showFeature */ "./src/js/showFeature.js");
-/* harmony import */ var _showFeature__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_showFeature__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _up_btn_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./up_btn.js */ "./src/js/up_btn.js");
-/* harmony import */ var _up_btn_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_up_btn_js__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
 
 /***/ }),
 

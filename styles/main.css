@@ -2119,7 +2119,7 @@ p {
 }
 
 .faq_title {
-  margin: 7.5rem 0 2.3125rem 0;
+  margin: 0 0 2.3125rem 0;
   text-align: center;
   font-size: 3rem;
 }
@@ -2493,7 +2493,7 @@ p {
 
   .footer .footer_xs .nav {
     height: 400px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
@@ -4952,7 +4952,7 @@ p {
   }
 
   .doc .btn_up {
-    right: 16vw;
+    right: 15vw;
   }
 }
 
