@@ -4141,6 +4141,7 @@ p {
     background-position: 100% -16.875rem;
     margin-top: 7.5rem;
     position: relative;
+    min-height: 43.75rem;
   }
 
   .support .title {
