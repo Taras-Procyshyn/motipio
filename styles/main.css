@@ -1074,6 +1074,13 @@ p {
   padding-left: 2.5rem;
 }
 
+.dot_check {
+  border-radius: 100%;
+  transform: scale(2.2);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
 .about .content .description {
   position: relative;
 }
@@ -2588,6 +2595,10 @@ p {
     text-align: center;
   }
 
+  .dots {
+    display: none;
+  }
+
   .downloads_icons {
     display: flex;
     flex-wrap: wrap;
@@ -3651,6 +3662,32 @@ p {
     width: 100%;
   }
 
+  .dots {
+    display: block;
+    z-index: 99;
+    position: fixed;
+    height: 6.25rem;
+    width: 1.25rem;
+    top: 50%;
+    right: 5%;
+  }
+
+  .dots a {
+    margin: 0.3125rem 0;
+    cursor: pointer;
+    display: block;
+    padding: 0.625rem 0.9375rem;
+  }
+
+  .dots a span {
+    border-radius: 100%;
+    display: block;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    background: #0072FF;
+    transition: all 0.3s ease-in-out;
+  }
+
   .downloads_icons {
     width: 22.625rem;
     height: 3rem;
@@ -4387,6 +4424,10 @@ p {
     display: flex;
     margin-top: 0;
     width: 100%;
+  }
+
+  .dots {
+    right: 3vw;
   }
 
   .downloads_icons {

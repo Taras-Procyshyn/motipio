@@ -1031,10 +1031,19 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 var listAnchorLinks = document.querySelectorAll("[href*='#']");
 var animating = false;
 var duration = 1200;
+var dots = document.querySelector(".dots");
+
+var links = _toConsumableArray(dots.querySelectorAll("span"));
+
+var arrSection = ["about", "how_it_works", "download"];
 listAnchorLinks.forEach(function (el) {
   return el.addEventListener('click', function (e) {
     e.preventDefault();
     var targetId = el.hash;
+    var index = arrSection.findIndex(function (el) {
+      return el === targetId.slice(1);
+    });
+    changeCurrDot(index, links);
     var targetPositon = document.querySelector(targetId).offsetTop;
     smoothScrol(targetPositon + 5, duration);
     animating = true;
@@ -1043,6 +1052,16 @@ listAnchorLinks.forEach(function (el) {
     }, duration);
   });
 });
+
+function changeCurrDot(index, links) {
+  links.forEach(function (link, item) {
+    if (item === index) {
+      link.classList.add("dot_check");
+    } else {
+      link.classList.remove("dot_check");
+    }
+  });
+}
 
 function smoothScrol(targetPositon, duration) {
   var startPosition = window.pageYOffset;
@@ -1066,7 +1085,6 @@ function easeInOutCubic(t, b, c, d) {
 }
 
 var home = document.querySelector('#home');
-var currSection = '';
 
 if (home && screen.width > 991) {
   document.querySelector('html').style.overflow = 'hidden';
@@ -1075,21 +1093,38 @@ if (home && screen.width > 991) {
 
   var reverseSections = _toConsumableArray(sections).reverse();
 
+  var currSection = {};
+  document.addEventListener('DOMContentLoaded', function () {
+    sections.forEach(function (section, item) {
+      var topCord = section.offsetTop - 3;
+      var buttomCord = section.offsetTop + window.innerHeight;
+
+      if (topCord <= pageYOffset && buttomCord > pageYOffset) {
+        currSection = section;
+        links[item].classList.add("dot_check");
+      }
+    });
+  });
   home.addEventListener('wheel', function (e) {
     var targetSection = sections.find(function (section) {
       return section.offsetTop > window.pageYOffset;
     });
+    var sectionId = 0;
     if (animating) return;
 
     if (e.deltaY > 0) {
-      targetSection = sections.find(function (section) {
+      targetSection = sections.find(function (section, item) {
+        sectionId = item;
         return section.offsetTop > window.pageYOffset;
       });
+      changeCurrDot(sectionId, links);
       if (targetSection) smoothScrol(targetSection.offsetTop + 4, duration);
     } else {
-      targetSection = reverseSections.find(function (section) {
+      targetSection = reverseSections.find(function (section, item) {
+        sectionId = item;
         return section.offsetTop + 5 < window.pageYOffset;
       });
+      changeCurrDot(sectionId, _toConsumableArray(links).reverse());
       if (targetSection) smoothScrol(targetSection.offsetTop + 4, duration);
     }
 
