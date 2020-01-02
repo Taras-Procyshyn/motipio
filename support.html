@@ -1,310 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Motipio</title>
-    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700,900i&display=swap&subset=cyrillic-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-    <main>
-      <article>
-        <section id="support">
-            
-        <div class="container header">
-                        <div class="logo">
-                                 <a href="./index.html">
-                                     <sup>beta</sup>
-                                     <img src="./img/svg/motipio-black-logo.svg" >
-                                 </a>                  
-                        </div>
-                             <div class="lang for_doc">
-                                    <span class="selected_lang" data-lang="en">Eng</span>
-                              
-                                    <div class="conteiner_langs hidden">
-                                      <div class="bg_langs"></div>
-                                      <span class="border"></span>
-                                      <label class="langs_item">
-                                        Eng
-                                        <input type="radio" value="en" class="en" name="lang" />
-                                      </label>
-                              
-                                      <label class="langs_item">
-                                        Укр
-                                        <input type="radio" value="uk" class="uk" name="lang" />
-                                      </label>
-                              
-                                      <label class="langs_item">
-                                        Рус
-                                        <input type="radio" value="ru" class="ru" name="lang" />
-                                      </label>
-                                    </div>
-                                  </div>
-                          <nav class="burger_menue burger_menue_for_doc">
-                               
-                                <input class="burger_checkbox" type="checkbox">
 
-                                <span></span>
-                                <span></span>
-                                <span></span>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-154896689-1”> </script> <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "UA-154896689-1");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Motipio</title>
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700,900i&display=swap&subset=cyrillic-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
 
-                                <div class="burger_menu__links">
-                                    <div class="lang lang_for_xs">
-                                        <span class="selected_lang"  data-lang="en">Eng</span>
-                                        <div class="conteiner_langs hidden">
-                                            <label  class="langs_item" >
-                                                Eng
-                                                <input  type="radio" value="en" class="en" name="lang">
-                                            </label>
-                        
-                                            
-                                            <label class="langs_item">
-                                                Укр
-                                                <input  type="radio" value="uk" class="uk"  name="lang">
-                                            </label>
-                                
-                                            
-                                            <label class="langs_item">
-                                                Рус
-                                            <input type="radio" value="ru" class="ru"  name="lang">
-                                            </label>
-                                        </div>
-                                    </div> 
-                                    <ul class="burger_menu__navigation_link">
-                                        <li><a href="./index.html">Home</a></li>
-                                        <li><a href="./pro.html">PRO</a></li>
-                                        <li><a href="./download.html">Download</a></li>
-                                        <li><a href="https://medium.com/@motipioukraine" target="_blank">News</a></li>
-                                        <li><a href="./faq.html">FAQ</a></li>
-                                        <li><a href="./support.html">Support</a></li>
-                                    </ul>
-                                    <div class="burger_menu__socials">
-                                            <a href="#" class="socials__facebook" target="_blank">
-                                            <img src="./img/svg/Facebook.svg" alt="">
-                                            </a>
-                                            <a href="#" class="socials__instagram" target="_blank">
-                                                
-                                            <img src="./img/svg/Instagram.svg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="burger_menu__foote_text">
-                                                <a href="./terms_of_service.html" class="footer_link_1">
-                                                  Terms of Service
-                                                </a>
-                                                |
-                                                <a href="./privacy_policy.html" class="footer_link_2">
-                                                  Privacy Policy
-                                                </a>
-                                                |
-                                                <a href="./cookie_policy.html" class="footer_xs_link_5">
-                                                  Cookie Policy
-                                                </a>
-                                        </div>
-                            </div>
-                          </nav>
-                    </div>
+<body>
+  <main>
+    <article>
+      <section id="support">
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <a href="/">
+                <img src="./img/svg/motipio-black-logo.svg" />
+              </a>
+            </div>
+            <div class="lang for_doc">
+              <span class="selected_lang" data-lang="en">Eng</span>
 
-          <div class="container">
-            <div class="support">
-                <h1 class="title support_mob_title support_title">Support</h1>
-              <div class="content">
-                <div class="description">
-                    <h1 class="title support_web_title support_title">Support</h1>
-                  <div class="text">
-                    <p class="support_text_1">
-                      Hi friend 👋 , if you got to this page for a reason, you
-                      probably have a question.
-                    </p>
-                    <p class="support_text_2">
-                      We will be happy to help with your questions, and resolve
-                      it as soon as possible for you. But before that, if you
-                      still decide to send us a request, be sure that you looked
-                      at these pages on which there is all the necessary
-                      information
-                      <a href="./faq.html">Frequently Asked Questions</a> &
-                      <a href="./terms_of_service.html">Terms of Service.</a>
-                    </p>
-                    <p class="support_text_3">
-                      If you didn’t find an answer there, send us a request by
-                      selecting the appropriate category of your question.
-                    </p>
-                    <p class="support_text_4">
-                      We will try to answer and resolve your question as soon as
-                      possible.
-                    </p>
-                    <p class="support_text_5">Thanks, Motipio team.</p>
+              <div class="conteiner_langs hidden">
+                <div class="bg_langs"></div>
+                <span class="border"></span>
+                <label class="langs_item">
+                  Eng
+                  <input type="radio" value="en" class="en" name="lang" />
+                </label>
+
+                <label class="langs_item">
+                  Укр
+                  <input type="radio" value="uk" class="uk" name="lang" />
+                </label>
+
+                <label class="langs_item">
+                  Рус
+                  <input type="radio" value="ru" class="ru" name="lang" />
+                </label>
+              </div>
+            </div>
+            <nav class="burger_menue burger_menue_for_doc">
+              <input class="burger_checkbox" type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="burger_menu__links">
+                <div class="lang lang_for_xs">
+                  <span class="selected_lang" data-lang="en">Eng</span>
+
+                  <div class="conteiner_langs hidden">
+                    <span class="bg_langs"></span>
+                    <span class="border"></span>
+                    <label class="langs_item">
+                      Eng
+                      <input type="radio" value="en" class="en" name="lang" />
+                    </label>
+
+                    <label class="langs_item">
+                      Укр
+                      <input type="radio" value="uk" class="uk" name="lang" />
+                    </label>
+
+                    <label class="langs_item">
+                      Рус
+                      <input type="radio" value="ru" class="ru" name="lang" />
+                    </label>
                   </div>
                 </div>
-                <div class="viwe">
-                  <div class="bg_smoll"></div>
-                  <ul class="suport_list">
-                    <li class="item">
-                      <a
-                        href="https://forms.gle/VB3tZG1hPkyF3sGA7"
-                        target="_blank"
-                      >
-                        <h4 class="support_link_h_1">
-                          Problem with application
-                        </h4>
-                        <p classs="support_link_p_1">
-                          iOS & Android app, works bad and other.
-                        </p>
-                      </a>
-                    </li>
-                    <li class="item">
-                      <a
-                        href="https://forms.gle/ib8VBHGA7PJpYfRN9"
-                        target="_blank"
-                      >
-                        <h4 class="support_link_h_2">
-                          Problem with application
-                        </h4>
-                        <p class="support_link_p_2">
-                          iOS & Android app, works bad and other.
-                        </p>
-                      </a>
-                    </li>
-                    <li class="item">
-                      <a
-                        href="https://forms.gle/jGMFGPo8S7hLyHY97"
-                        target="_blank"
-                      >
-                        <h4 class="support_link_h_3">
-                          Problem with application
-                        </h4>
-                        <p class="support_link_p_3">
-                          iOS & Android app, works bad and other.
-                        </p>
-                      </a>
-                    </li>
-                  </ul>
+
+                <ul class="burger_menu__navigation_link">
+                  <li><a href="/" class="burg_home">Home</a></li>
+                  <li><a href="./pro" class="burg_pro">PRO</a></li>
+                  <li><a href="./download" class="burg_download">Download</a></li>
+                  <li>
+                    <a href="https://medium.com/@motipioukraine" class="burg_news" target="_blank">News</a>
+                  </li>
+                  <li><a href="./faq" class="burg_faq">FAQ</a></li>
+                  <li><a href="./support" class="burg_support">Support</a></li>
+                </ul>
+
+                <div class="burger_menu__socials">
+                  <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                    <img src="./img/svg/Facebook.svg" alt="" />
+                  </a>
+                  <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+                    <img src="./img/svg/Instagram.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="burger_menu__foote_text">
+                  <a href="./terms" class="burg_footer_link_1">
+                    Terms of Service
+                  </a>
+                  |
+                  <a href="./privacy" class="burg_footer_link_2">
+                    Privacy Policy
+                  </a>
+                  |
+                  <a href="./cookie" class="footer_xs_link_5 burg_footer_link_3">
+                    Cookie Policy
+                  </a>
                 </div>
               </div>
-              
-    <div class="footer">
-        <div class="footer_xl">
-            <div class="container">
-                <div class="footer__navigation">
-                        <nav class="footer__navigation_link">
-                                <ul>
-                                    <li><a href="./terms_of_service.html" class="burg_footer_link_1"> Terms of Service</a></li>
-                                    <li>|</li>
-                                    <li><a href="./privacy_policy.html" class="burg_footer_link_2">Privacy Policy</a></li>
-                                    <li>|</li>
-                                    <li><a href="./faq.html" class="burg_faq">FAQ</a></li>
-                                    <li>|</li>
-                                    <li><a href="./support.html" class="burg_support">Support</a></li>
-                                </ul>
-                            </nav>   
-                            <div class="footer__socials">
-                                    <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
-                                        <img src="./img/svg/Faseook_dark.svg" alt="">
-                                    </a>
-                                    <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
-                                        <img src="./img/svg/Instagran_dark.svg" alt="">
-                                    </a>
-                            </div>    
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+          <div class="support">
+            <h1 class="title support_mob_title support_title">Support</h1>
+            <div class="content">
+              <div class="description">
+                <h1 class="title support_web_title support_title">Support</h1>
+                <div class="text">
+                  <p class="support_text_1">
+                    If you have a questions about Motipio, please see FAQ's, where you might find a simple answer.
+                    Otherwise, please send a request to Motipio, and we will take care of your question and find the
+                    best solution.
+                  </p>
+                </div>
+              </div>
+              <div class="viwe">
+                <div class="bg_smoll"></div>
+                <ul class="suport_list">
+                  <li class="item">
+                    <a href="https://forms.gle/VB3tZG1hPkyF3sGA7" target="_blank">
+                      <h4 class="support_link_h_1">
+                        Problem with application
+                      </h4>
+                      <p class="support_link_p_1">
+                        iOS & Android app, works bad and other.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://forms.gle/ib8VBHGA7PJpYfRN9" target="_blank">
+                      <h4 class="support_link_h_2">
+                        Problem with application
+                      </h4>
+                      <p class="support_link_p_2">
+                        iOS & Android app, works bad and other.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="https://forms.gle/jGMFGPo8S7hLyHY97" target="_blank">
+                      <h4 class="support_link_h_3">
+                        Problem with application
+                      </h4>
+                      <p class="support_link_p_3">
+                        iOS & Android app, works bad and other.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="footer_xl">
+                <div class="container">
+                  <div class="footer__navigation">
+                    <nav class="footer__navigation_link">
+                      <ul>
+                        <li><a href="./terms" class="burg_footer_link_1"> Terms of Service</a></li>
+                        <li>|</li>
+                        <li><a href="./privacy" class="burg_footer_link_2">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="./faq" class="burg_faq">FAQ</a></li>
+                        <li>|</li>
+                        <li><a href="./support" class="burg_support">Support</a></li>
+                      </ul>
+                    </nav>
+                    <div class="footer__socials">
+                      <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                        <img src="./img/svg/Faseook_dark.svg" alt="">
+                      </a>
+                      <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+                        <img src="./img/svg/Instagran_dark.svg" alt="">
+                      </a>
                     </div>
-                    <p class="footer_copyright">
-                        © Copyright 2019.
-                    </p>
-             </div>
-        </div>
-        <div class="footer_xs">
-            <div class="container">
-                        <ul class="nav">
-                            <li><a href="./pro.html" class="burg_pro">PRO</a></li>
-                            <li><a href="https://medium.com/@motipioukraine" class="burg_news">News</a></li>
-                            <li><a href="./faq.html" class="burg_faq">FAQ</a></li>
-                            <li><a href="./support.html" class="burg_support">Support</a></li>
-                        </ul>
-                        <div class="socials">
-                                <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
-                                <img src="./img/svg/Faseook_dark.svg" alt="">
-                                </a>
-                                <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
-                                    
-                                <img src="./img/svg/Instagran_dark.svg" alt="">
-                                </a>
-                            </div>
-                        <ul class="footer_text">
-                            <li>
-                                <a href="./terms_of_service.html" class="burg_footer_link_1">
-                                    Terms of Service
-                                </a> 
-                            </li>
-                            <li>
-                                |
-                            </li>
-                            <li>
-                                <a href="./privacy_policy.html" class="burg_footer_link_2">
-                                    Privacy Policy
-                                </a> 
-                            </li>
-                            <li>
-                                |
-                            </li>
-                            <li>
-                                <a href="./cookie_policy.html" class="burg_footer_link_3">
-                                    Cookie Policy
-                                </a>
-                            </li>
+                  </div>
+                  <p class="footer_copyright">
+                    © Motipio
+                  </p>
+                </div>
+              </div>
+              <div class="footer_xs">
+                <div class="container">
+                  <ul class="nav">
+                    <li><a href="./pro" class="burg_pro">PRO</a></li>
+                    <li><a href="https://medium.com/@motipioukraine" class="burg_news">News</a></li>
+                    <li><a href="./faq" class="burg_faq">FAQ</a></li>
+                    <li><a href="./support" class="burg_support">Support</a></li>
+                  </ul>
+                  <div class="socials">
+                    <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                      <img src="./img/svg/Faseook_dark.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+
+                      <img src="./img/svg/Instagran_dark.svg" alt="">
+                    </a>
+                  </div>
+                  <ul class="footer_text">
+                    <li>
+                      <a href="./terms" class="burg_footer_link_1">
+                        Terms of Service
+                      </a>
+                    </li>
+                    <li>
+                      |
+                    </li>
+                    <li>
+                      <a href="./privacy" class="burg_footer_link_2">
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li>
+                      |
+                    </li>
+                    <li>
+                      <a href="./cookie" class="burg_footer_link_3">
+                        Cookie Policy
+                      </a>
+                    </li>
 
 
-                            </ul>
-                        <p class="footer_copyright">
-                                Copyright 2019.
-                            </p>
-        </div>
-    </div>
-    </div>
-    </div>
-
+                  </ul>
+                  <p class="footer_copyright">
+                    © Motipio
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </article>
-    </main>
-    <div class="cookie hidden">
-  <div class="cookie_content">
-    <div class="text">
-      <h4 class="cookie_title">
-        This website uses cookies.
-      </h4>
-      <p class="cookie_text"> 
-        Before you decide whether to agree to accept and to store first-party
-        and third-party cookies on your device, please read more about
-        <a href="./cookie_policy.html">cookie policy here.</a>
-      </p>
-    </div>
-    <div class="cookie_toggle">
-      <img src="./img/svg/Cookie_remove.svg" alt="" />
+
+        </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <div class="cookie hidden">
+    <div class="cookie_content">
+      <div class="text">
+        <p class="cookie_modal_comment">
+          This website uses cookies 🍪, please read more about <a href="./cookie">cookie policy here.</a>
+        </p>
+      </div>
+      <div class="cookie_toggle">
+        <img src="./img/svg/Cookie_remove.svg" alt="" />
+      </div>
     </div>
   </div>
-</div>
 
-  </body>
-  <script src="./js/main.js"></script>
+</body>
+<script src="./js/main.js"></script>
+
 </html>

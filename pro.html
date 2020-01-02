@@ -2,552 +2,541 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Motipio</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&display=swap&subset=cyrillic-ext"
-        rel="stylesheet">
-        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700,900i&display=swap&subset=cyrillic-ext"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-154896689-1”> </script> <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "UA-154896689-1");
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Motipio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&display=swap&subset=cyrillic-ext"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="./img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="./img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="./img/favicons/apple-touch-icon-1024x1024.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700,900i&display=swap&subset=cyrillic-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
-    <header>
-        
-        <div class="container header">
-                        <div class="logo">
-                                 <a href="./index.html">
-                                     <sup>beta</sup>
-                                     <img src="./img/svg/motipio-black-logo.svg" >
-                                 </a>                  
-                        </div>
-                             <div class="lang for_doc">
-                                    <span class="selected_lang" data-lang="en">Eng</span>
-                              
-                                    <div class="conteiner_langs hidden">
-                                      <div class="bg_langs"></div>
-                                      <span class="border"></span>
-                                      <label class="langs_item">
-                                        Eng
-                                        <input type="radio" value="en" class="en" name="lang" />
-                                      </label>
-                              
-                                      <label class="langs_item">
-                                        Укр
-                                        <input type="radio" value="uk" class="uk" name="lang" />
-                                      </label>
-                              
-                                      <label class="langs_item">
-                                        Рус
-                                        <input type="radio" value="ru" class="ru" name="lang" />
-                                      </label>
-                                    </div>
-                                  </div>
-                          <nav class="burger_menue burger_menue_for_doc">
-                               
-                                <input class="burger_checkbox" type="checkbox">
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="/">
+            <img src="./img/svg/motipio-black-logo.svg" />
+          </a>
+        </div>
+        <div class="lang for_doc">
+          <span class="selected_lang" data-lang="en">Eng</span>
 
-                                <span></span>
-                                <span></span>
-                                <span></span>
+          <div class="conteiner_langs hidden">
+            <div class="bg_langs"></div>
+            <span class="border"></span>
+            <label class="langs_item">
+              Eng
+              <input type="radio" value="en" class="en" name="lang" />
+            </label>
 
-                                <div class="burger_menu__links">
-                                    <div class="lang lang_for_xs">
-                                        <span class="selected_lang"  data-lang="en">Eng</span>
-                                        <div class="conteiner_langs hidden">
-                                            <label  class="langs_item" >
-                                                Eng
-                                                <input  type="radio" value="en" class="en" name="lang">
-                                            </label>
-                        
-                                            
-                                            <label class="langs_item">
-                                                Укр
-                                                <input  type="radio" value="uk" class="uk"  name="lang">
-                                            </label>
-                                
-                                            
-                                            <label class="langs_item">
-                                                Рус
-                                            <input type="radio" value="ru" class="ru"  name="lang">
-                                            </label>
-                                        </div>
-                                    </div> 
-                                    <ul class="burger_menu__navigation_link">
-                                        <li><a href="./index.html">Home</a></li>
-                                        <li><a href="./pro.html">PRO</a></li>
-                                        <li><a href="./download.html">Download</a></li>
-                                        <li><a href="https://medium.com/@motipioukraine" target="_blank">News</a></li>
-                                        <li><a href="./faq.html">FAQ</a></li>
-                                        <li><a href="./support.html">Support</a></li>
-                                    </ul>
-                                    <div class="burger_menu__socials">
-                                            <a href="#" class="socials__facebook" target="_blank">
-                                            <img src="./img/svg/Facebook.svg" alt="">
-                                            </a>
-                                            <a href="#" class="socials__instagram" target="_blank">
-                                                
-                                            <img src="./img/svg/Instagram.svg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="burger_menu__foote_text">
-                                                <a href="./terms_of_service.html" class="footer_link_1">
-                                                  Terms of Service
-                                                </a>
-                                                |
-                                                <a href="./privacy_policy.html" class="footer_link_2">
-                                                  Privacy Policy
-                                                </a>
-                                                |
-                                                <a href="./cookie_policy.html" class="footer_xs_link_5">
-                                                  Cookie Policy
-                                                </a>
-                                        </div>
-                            </div>
-                          </nav>
-                    </div>
+            <label class="langs_item">
+              Укр
+              <input type="radio" value="uk" class="uk" name="lang" />
+            </label>
 
-    </header>
-    <main>
-        <article>
-            <section>
-                <div class="monetize container">
-                    <div class="description">
-                        <h2 class="pro_title monetize_title">Monetize your professional skills, experience and famous
-                        </h2>
-                        <p class="pro_text monetize_text">
-                            By communicating with people from over the World without any borders
-                        </p>
-                    </div>
-                    <div class="viwe">
-                        <div class="shadow_1">
-                        </div>
-                        <div class="shadow_2">
-                        </div>
-                        <div class="person">
-                            <div class="row_1">
-                                <div class="avatar">
-                                    <p class="name">
-                                        A. J. Smith
-                                    </p>
-                                    <img src="./img/svg/pro_rate.svg" alt="" class="rate">
-                                </div>
-                                <div class="erned">
-                                    <p class="number">800 USD</p>
-                                    <p class="text phone_row1_text">you will receive</p>
-                                </div>
-                            </div>
-                            <div class="row_2">
-                                <div class="request">
-                                    <p class="text phone_row2_text">
-                                        Request #1:
-                                    </p>
-                                    <p class="message phone_message">
-                                        Hello, I need your advice about my marketing.
-                                    </p>
-                                </div>
-                                <div class="buttons">
-                                    <div class="btn_decline">
-                                        Decline
-                                    </div>
-                                    <div class="btn_accept">
-                                        Accept
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistic">
-                            <div class="stat_request">
-                                <p class="text">
-                                    Income reqeusts
-                                </p>
-                                <p class="count">
-                                    1 of 16
-                                </p>
-                            </div>
-                            <div class="stat_cash">
-                                <p class="text">
-                                    Projected Income
-                                </p>
-                                <p class="count">
-                                    12 800 USD
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="join_to_us">
-                <div class="container">
-                    <div class="join_to_us">
-                        <h2 class="pro_title join_to_us_title">How join to us</h2>
-                        <div class="content">
-                            <div class="description">
-                                <div class="pro_text join_to_us_text">
-                                    <p class="join_to_us_text_1">
-                                        Motipio open to new professionals, who really have skills, life expirince, what
-                                        they can
-                                        share with people. Or you want to mentoring or coaching people, make them better
-                                        and
-                                        space around. Also, you can communicate with your fans, solve overloaded DM on
-                                        your
-                                        social media.
-                                    </p>
-                                    <p class="join_to_us_text_2">
-                                        We will be happy if you join to us, for making our World a better place to live
-                                        for all
-                                        of us.
-                                    </p>
-                                </div>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
-                                    target="_blank" class="btn join_to_us_btn">
-                                    Enroll as PRO
-                                </a>
-                            </div>
-                            <div class="viwe">
-                                <ul class="action">
-                                    <li class="action_item">
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
-                                            target="_blank"></a>
-                                        <h3 class="action_item_h_1">Verefication</h3>
-                                        <p class="action_item_p_1">Become a Verified PRO user</p>
-                                    </li>
-                                    <li class="action_item">
-                                        <h3 class="action_item_h_2">Complite Profile</h3>
-                                        <h4 class="action_item_h4_2">Fulfill information about yourself:</h4>
-                                        <ul>
-                                            <li class="action_item_li_1">General info (name, photo, etc.)</li>
-                                            <li class="action_item_li_2">Summery (sth about you) </li>
-                                            <li class="action_item_li_3">Profesional skills (master of)</li>
-                                            <li class="action_item_li_4">Languages (which you know)</li>
-                                            <li class="action_item_li_5">Request details (cost per request and details
-                                                offer)</li>
-                                        </ul>
-                                    </li>
-                                    <li class="action_item">
-                                        <h3 class="action_item_h_3">Set a payout method</h3>
-                                        <h4 class="action_item_h4_3">Partnering with Payoneer</h4>
-                                        <p class="action_item_p_3">
-                                            Great list of ways to withdrawals your earnigs
-                                            with low fees on transfers to card,
-                                            bank and other. <a href="https://www.payoneer.com/" target="_blank">Learn
-                                                more about</a>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <label class="langs_item">
+              Рус
+              <input type="radio" value="ru" class="ru" name="lang" />
+            </label>
+          </div>
+        </div>
+        <nav class="burger_menue burger_menue_for_doc">
+          <input class="burger_checkbox" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="burger_menu__links">
+            <div class="lang lang_for_xs">
+              <span class="selected_lang" data-lang="en">Eng</span>
 
-                </div>
-                </div>
-            </section>
-            <section>
-                <div class="hom_you_can_work container">
-                    <h2 class="pro_title hycw_title">How you can work on Montipio platform</h2>
+              <div class="conteiner_langs hidden">
+                <span class="bg_langs"></span>
+                <span class="border"></span>
+                <label class="langs_item">
+                  Eng
+                  <input type="radio" value="en" class="en" name="lang" />
+                </label>
 
-                    <ul class="benefits__list">
-                        <li class="benefit__item">
-                            <h3 class="benefit_item_h_1">Consulting service</h3>
-                            <p class="benefit_item_p_1">
-                                So strongly and metaphysically did I conceive of my situation then, that while earnestly
-                                watching his motions, I seemed distinctly to perceive that my own individuality was now
-                                merged in a joint stock company of two.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
-                            <h3 class="benefit_item_h_2">Communication with fans</h3>
-                            <p class="benefit_item_p_2">
-                                But this was not the only jamming jeopardy
-                                he was exposed to. Unappalled by the massacre
-                                made upon them during the night, the sharks now
-                                freshly and more keenly allured by the before pent
-                                blood which began.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
-                            <h3 class="benefit_item_h_3">Mentoring and Coaching</h3>
-                            <p class="benefit_item_p_3">
-                                I have hinted that I would often jerk poor Queequeg
-                                from between the whale and the ship—where he would
-                                occasionally fall, from the incessant rolling and
-                                swaying of both.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
-                            <h3 class="benefit_item_h_4">Charity and help</h3>
-                            <p class="benefit_item_p_4">
-                                So that for better or for worse, we two, for the time,
-                                were wedded; and should poor Queequeg sink to rise no
-                                more, then both usage and honour demanded.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
-                            <div class="icon">
-                                <p>
-                                    👻
-                                </p>
-                            </div>
-                            <div class="benefit__item__text">
-                                <p class="benefit_item_p_5">
-                                    All cases which were written above by Motipio team, its only examples.
-                                </p>
-                                <p class="benefit_item_p_6">
-                                    You have the ability to set your own way of gaming, your request details, and
-                                    others.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="how_earn">
-                <div class="how_earn container">
-                    <h2 class="pro_title how_earn_title">How much you can charge per request</h2>
-                    <ul class="benefits__list">
-                        <li class="benefit__item">
-                            <h3 class="how_earn_h_1">
-                                Dozens and Hundreds
-                            </h3>
-                            <p class="how_earn_p_1">
-                                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
-                                Donec viverra eleifend lacus, vitae ullamcorper metus.
-                                Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
-                                Donec euismod scelerisque ligula.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
-                            <h3 class="how_earn_h_2">Hundreds and Thousands</h3>
-                            <p class="how_earn_p_2">
-                                Banjo tote bag bicycle rights, High Life sartorial
-                                cray craft beer whatever street art fap. Hashtag
-                                typewriter banh mi, squid keffiyeh High Life
-                                Brooklyn twee craft bee.
-                            </p>
-                        </li>
-                        <li class="benefit__item">
+                <label class="langs_item">
+                  Укр
+                  <input type="radio" value="uk" class="uk" name="lang" />
+                </label>
 
-                            <div class="icon">
-                                <p>
-                                    🤑
-                                </p>
-                            </div>
-                            <div class="benefit__item__text">
-                                <p class="benefit_item_p_5">
-                                    All cases which were written above by Motipio team, its only examples.
-                                </p>
-                                <p class="benefit_item_p_6">
-                                    You have the ability to set your own way of gaming, your request details, and
-                                    others.
-                                </p>
-                            </div>
+                <label class="langs_item">
+                  Рус
+                  <input type="radio" value="ru" class="ru" name="lang" />
+                </label>
+              </div>
+            </div>
 
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="receive_requests">
-                <div class="receive_requests container">
-                    <div class="viwe">
-                        <div class="contein_img">
+            <ul class="burger_menu__navigation_link">
+              <li><a href="/" class="burg_home">Home</a></li>
+              <li><a href="./pro" class="burg_pro">PRO</a></li>
+              <li><a href="./download" class="burg_download">Download</a></li>
+              <li>
+                <a href="https://medium.com/@motipioukraine" class="burg_news" target="_blank">News</a>
+              </li>
+              <li><a href="./faq" class="burg_faq">FAQ</a></li>
+              <li><a href="./support" class="burg_support">Support</a></li>
+            </ul>
 
-                        </div>
-                    </div>
-                    <div class="description">
-                        <h2 class="pro_title receive_requests_title">
-                            How to receive reqeusts
-                        </h2>
-                        <ol>
-                            <li class="receive_requests_item_1">
-                                Complete profile and go to Online;
-                            </li>
-                            <li class="receive_requests_item_2">
-                                Share info on your social media;
-                            </li>
-                            <li class="receive_requests_item_3">
-                                Make more earnings by requests;
-                            </li>
-                        </ol>
-                        <p class="pro_text receive_requests_text">
-                            Use your social media, for attracting your
-                            audience, followers or fans to founding you
-                            on Motipio by @username of name searching.
-                            Create stories or post about it, with link
-                            what following to Motipio
-                            <a href="./index.html">
-                                main page
-                            </a>
-                            or
-                            <a href="./download.html">
-                                download
-                            </a>
-                            page.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="let_join">
-                <div class="let_join container">
-                    <div class="let_join__title">
-                        <h2 class="pro_title let_join_title">Like it? Let's join to us, now!</h2>
-                        <div class="socials">
-                            <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
-                                <img src="./img/svg/Facebook.svg" alt="">
-                            </a>
-                            <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram"
-                                target="_blank">
-                                <img src="./img/svg/Instagram.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <div class="burger_menu__socials">
+              <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                <img src="./img/svg/Facebook.svg" alt="" />
+              </a>
+              <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="" />
+              </a>
+            </div>
 
-                    <div class="description">
-                        <div class="logo">
-                            <img src="./img/svg/motipio-white-logo_pro.svg" alt="">
-                        </div>
-                        <div class="join_to_us__tags">
-                            <p class="tags__description">
-                                Thanks for interesting in Motipio, and we know that
-                                you are an RPO with great skills which need in a Whole World.
-                                Apply a form, and join to huge community,
-                                for making our world a better place for leaving for humans.
-                            </p>
-                            <ul class="tags__list">
-                                <li class="tag__item tag__item_1">
-                                    Entrepreneurship
-                                </li>
-                                <li class="tag__item tag__item_2">
-                                    Finance & Investing
-                                </li>
-                                <li class="tag__item tag__item_3">
-                                    Beauty & Fashion
-                                </li>
-                                <li class="tag__item tag__item_4">
-                                    Sport & Health
-                                </li>
-                                <li class="tag__item tag__item_5">
-                                    Media & Social Media
-                                </li>
-                                <li class="tag__item tag__item_6">
-                                        More...
-                                    </li>
-                            </ul>
-
-                        </div>
-                        <div class="btn">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
-                                target="_blank" class="join_to_us_btn_2">
-                                Join to Motipio as PRO, now!
-                            </a>
-                        </div>
-                        <din class="footer_xs_pro">
-                            <div class="pro_socials">
-                                <a href="https://www.facebook.com/motipioukraine" class="socials__facebook"
-                                    target="_blank">
-                                    <img src="./img/svg/Facebook.svg" alt="">
-                                </a>
-                                <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram"
-                                    target="_blank">
-
-                                    <img src="./img/svg/Instagram.svg" alt="">
-                                </a>
-                            </div>
-
-                            <ul class="pro_footer_text">
-                                <li>
-                                    <a href="./terms_of_service.html" class="burg_footer_link_1">
-                                        Terms of Service
-                                    </a>
-                                </li>
-                                <li>
-                                    |
-                                </li>
-                                <li>
-                                    <a href="./privacy_policy.html" class="burg_footer_link_2">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    |
-                                </li>
-                                <li>
-                                    <a href="./cookie_policy.html" class="burg_footer_link_3">
-                                        Cookie Policy
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="footer_copyright">
-                                Copyright 2019.
-                            </p>
-                        </din>
-                    </div>
-                </div>
-                <footer id="pro_footer">
-                    <div class="container">
-                        <div class="footer footer_dark">
-                            <div class="footer_xl">
-                                <div class="footer__navigation">
-                                    <nav class="footer__navigation_link">
-                                        <ul>
-                                            <li><a href="./terms_of_service.html" class="white burg_footer_link_1">Terms of
-                                                    service</a></li>
-                                            <li>|</li>
-                                            <li><a href="./privacy_policy.html" class="white burg_footer_link_2">Privacy
-                                                    Policy</a></li>
-                                            <li>|</li>
-                                            <li><a href="./faq.html" class="white burg_faq">FAQ</a></li>
-                                            <li>|</li>
-                                            <li><a href="./support.html" class="white burg_support">Support</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <p class="footer_copyright white">
-                                    Copyright 2019.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </section>
-        </article>
-    </main>
-    <div class="cookie hidden">
-  <div class="cookie_content">
-    <div class="text">
-      <h4 class="cookie_title">
-        This website uses cookies.
-      </h4>
-      <p class="cookie_text"> 
-        Before you decide whether to agree to accept and to store first-party
-        and third-party cookies on your device, please read more about
-        <a href="./cookie_policy.html">cookie policy here.</a>
-      </p>
+            <div class="burger_menu__foote_text">
+              <a href="./terms" class="burg_footer_link_1">
+                Terms of Service
+              </a>
+              |
+              <a href="./privacy" class="burg_footer_link_2">
+                Privacy Policy
+              </a>
+              |
+              <a href="./cookie" class="footer_xs_link_5 burg_footer_link_3">
+                Cookie Policy
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div class="cookie_toggle">
-      <img src="./img/svg/Cookie_remove.svg" alt="" />
+  </header>
+  <main>
+    <article>
+      <section>
+        <div class="monetize container">
+          <div class="description">
+            <h2 class="pro_title monetize_title">Monetize your professional skills, experience and famous
+            </h2>
+            <p class="pro_text monetize_text">
+              By communicating with people from over the World without any borders
+            </p>
+          </div>
+          <div class="viwe">
+            <div class="shadow_1">
+            </div>
+            <div class="shadow_2">
+            </div>
+            <div class="person">
+              <div class="row_1">
+                <div class="avatar">
+                  <p class="name">
+                    A. J. Smith
+                  </p>
+                  <img src="./img/svg/pro_rate.svg" alt="" class="rate">
+                </div>
+                <div class="erned">
+                  <p class="number">800 USD</p>
+                  <p class="text phone_row1_text">you will receive</p>
+                </div>
+              </div>
+              <div class="row_2">
+                <div class="request">
+                  <p class="text phone_row2_text">
+                    Request #1:
+                  </p>
+                  <p class="message phone_message">
+                    Hello, I need your advice about my marketing.
+                  </p>
+                </div>
+                <div class="buttons">
+                  <div class="btn_decline">
+                    Decline
+                  </div>
+                  <div class="btn_accept">
+                    Accept
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="statistic">
+              <div class="stat_request">
+                <p class="text statistic_text1">
+                  Income reqeusts
+                </p>
+                <p class="count statistic_count1">
+                  1 of 16
+                </p>
+              </div>
+              <div class="stat_cash">
+                <p class="text statistic_text2">
+                  Projected Income
+                </p>
+                <p class="count statistic_count2">
+                  12 800 USD
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="join_to_us">
+        <div class="container">
+          <div class="join_to_us">
+            <h2 class="pro_title join_to_us_title">How join to us</h2>
+            <div class="content">
+              <div class="description">
+                <div class="pro_text join_to_us_text">
+                  <p class="join_to_us_text_1">
+                    Join Motipio if you have expertise, life experience and professional skills. Earn extra revenue by
+                    talking to your followers and clients at any time.
+                  </p>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
+                  target="_blank" class="btn join_to_us_btn">
+                  Enroll as PRO
+                </a>
+              </div>
+              <div class="viwe">
+                <ul class="action">
+                  <li class="action_item">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
+                      target="_blank"></a>
+                    <h3 class="action_item_h_1">Verefication</h3>
+                    <p class="action_item_p_1">Become a Verified PRO user</p>
+                  </li>
+                  <li class="action_item">
+                    <h3 class="action_item_h_2">Complite Profile</h3>
+                    <ul>
+                      <li class="action_item_li_1">General info (name, photo, etc.)</li>
+                      <li class="action_item_li_2">Summery (sth about you) </li>
+                      <li class="action_item_li_3">Profesional skills (master of)</li>
+                      <li class="action_item_li_4">Languages (which you know)</li>
+                      <li class="action_item_li_5">Request details (cost per request and details
+                        offer)</li>
+                    </ul>
+                  </li>
+                  <li class="action_item">
+                    <h3 class="action_item_h_3">Set a payout method</h3>
+                    <h4 class="action_item_h4_3">Partnering with Payoneer</h4>
+                    <p class="action_item_p_3">
+                      Great list of ways to withdrawals your earnigs
+                      with low fees on transfers to card,
+                      bank and other. <a href="https://www.payoneer.com/" target="_blank">Learn
+                        more about</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="hom_you_can_work container">
+          <h2 class="pro_title hycw_title">How you can work on Montipio platform</h2>
+
+          <ul class="benefits__list">
+            <li class="benefit__item">
+              <h3 class="benefit_item_h_1">Consulting service</h3>
+              <p class="benefit_item_p_1">
+                So strongly and metaphysically did I conceive of my situation then, that while earnestly
+                watching his motions, I seemed distinctly to perceive that my own individuality was now
+                merged in a joint stock company of two.
+              </p>
+            </li>
+            <li class="benefit__item">
+              <h3 class="benefit_item_h_2">Communication with fans</h3>
+              <p class="benefit_item_p_2">
+                But this was not the only jamming jeopardy
+                he was exposed to. Unappalled by the massacre
+                made upon them during the night, the sharks now
+                freshly and more keenly allured by the before pent
+                blood which began.
+              </p>
+            </li>
+            <li class="benefit__item">
+              <h3 class="benefit_item_h_3">Mentoring and Coaching</h3>
+              <p class="benefit_item_p_3">
+                I have hinted that I would often jerk poor Queequeg
+                from between the whale and the ship—where he would
+                occasionally fall, from the incessant rolling and
+                swaying of both.
+              </p>
+            </li>
+            <li class="benefit__item">
+              <h3 class="benefit_item_h_4">Charity and help</h3>
+              <p class="benefit_item_p_4">
+                So that for better or for worse, we two, for the time,
+                were wedded; and should poor Queequeg sink to rise no
+                more, then both usage and honour demanded.
+              </p>
+            </li>
+            <li class="benefit__item">
+              <div class="icon">
+                <p>
+                  👻
+                </p>
+              </div>
+              <div class="benefit__item__text">
+                <p class="benefit_item_p_5">
+                  All cases which were written above by Motipio team, its only examples.
+                </p>
+                <p class="benefit_item_p_6">
+                  You have the ability to set your own way of gaming, your request details, and
+                  others.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="how_earn">
+        <div class="how_earn container">
+          <h2 class="pro_title how_earn_title">How much you can charge per request</h2>
+          <ul class="benefits__list">
+            <li class="benefit__item">
+              <h3 class="how_earn_h_1">
+                Dozens and Hundreds
+              </h3>
+              <p class="how_earn_p_1">
+                Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                Donec viverra eleifend lacus, vitae ullamcorper metus.
+                Sed sollicitudin ipsum quis nunc sollicitudin ultrices.
+                Donec euismod scelerisque ligula.
+              </p>
+            </li>
+            <li class="benefit__item">
+              <h3 class="how_earn_h_2">Hundreds and Thousands</h3>
+              <p class="how_earn_p_2">
+                Banjo tote bag bicycle rights, High Life sartorial
+                cray craft beer whatever street art fap. Hashtag
+                typewriter banh mi, squid keffiyeh High Life
+                Brooklyn twee craft bee.
+              </p>
+            </li>
+            <li class="benefit__item">
+
+              <div class="icon">
+                <p>
+                  🤑
+                </p>
+              </div>
+              <div class="benefit__item__text">
+                <p class="benefit_item_p_5">
+                  All cases which were written above by Motipio team, its only examples.
+                </p>
+                <p class="benefit_item_p_6">
+                  You have the ability to set your own way of gaming, your request details, and
+                  others.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="receive_requests">
+        <div class="receive_requests container">
+          <div class="viwe">
+            <div class="contein_img">
+
+            </div>
+          </div>
+          <div class="description">
+            <h2 class="pro_title receive_requests_title">
+              How to receive reqeusts
+            </h2>
+            <ol>
+              <li class="receive_requests_item_1">
+                Complete profile and go to Online;
+              </li>
+              <li class="receive_requests_item_2">
+                Share info on your social media;
+              </li>
+              <li class="receive_requests_item_3">
+                Make more earnings by requests;
+              </li>
+            </ol>
+            <p class="pro_text receive_requests_text">
+              Use your social media, for attracting your
+              audience, followers or fans to founding you
+              on Motipio by @username of name searching.
+              Create stories or post about it, with link
+              what following to Motipio
+              <a href="/">
+                main page
+              </a>
+              or
+              <a href="./download">
+                download
+              </a>
+              page.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="let_join">
+        <div class="let_join container">
+          <div class="let_join__title">
+            <h2 class="pro_title let_join_title">Like it? Let's join to us, now!</h2>
+            <div class="socials">
+              <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                <img src="./img/svg/Facebook.svg" alt="">
+              </a>
+              <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+                <img src="./img/svg/Instagram.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="description">
+            <div class="logo">
+              <img src="./img/svg/motipio-white-logo_pro.svg" alt="">
+            </div>
+            <div class="join_to_us__tags">
+              <p class="tags__description">
+                Thanks for interesting in Motipio, and we know that
+                you are an RPO with great skills which need in a Whole World.
+                Apply a form, and join to huge community,
+                for making our world a better place for leaving for humans.
+              </p>
+              <ul class="tags__list">
+                <li class="tag__item tag__item_1">
+                  Entrepreneurship
+                </li>
+                <li class="tag__item tag__item_2">
+                  Finance & Investing
+                </li>
+                <li class="tag__item tag__item_3">
+                  Beauty & Fashion
+                </li>
+                <li class="tag__item tag__item_4">
+                  Sport & Health
+                </li>
+                <li class="tag__item tag__item_5">
+                  Media & Social Media
+                </li>
+                <li class="tag__item tag__item_6">
+                  More...
+                </li>
+              </ul>
+
+            </div>
+            <div class="btn">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_0FGEXW4LBAGKcmjrDK6OAeDSMptNj35n21xXVjEdUq7aMQ/viewform?usp=sf_link"
+                target="_blank" class="join_to_us_btn_2">
+                Join to Motipio as PRO, now!
+              </a>
+            </div>
+            <din class="footer_xs_pro">
+              <div class="pro_socials">
+                <a href="https://www.facebook.com/motipioukraine" class="socials__facebook" target="_blank">
+                  <img src="./img/svg/Facebook.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/motipio_ukraine/" class="socials__instagram" target="_blank">
+
+                  <img src="./img/svg/Instagram.svg" alt="">
+                </a>
+              </div>
+
+              <ul class="pro_footer_text">
+                <li>
+                  <a href="./terms" class="burg_footer_link_1">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  |
+                </li>
+                <li>
+                  <a href="./privacy" class="burg_footer_link_2">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  |
+                </li>
+                <li>
+                  <a href="./cookie" class="burg_footer_link_3">
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+              <p class="footer_copyright">
+                Copyright 2019.
+              </p>
+            </din>
+          </div>
+        </div>
+        <footer id="pro_footer">
+          <div class="container">
+            <div class="footer footer_dark">
+              <div class="footer_xl">
+                <div class="footer__navigation">
+                  <nav class="footer__navigation_link">
+                    <ul>
+                      <li><a href="./terms" class="white burg_footer_link_1">Terms
+                          of
+                          service</a></li>
+                      <li>|</li>
+                      <li><a href="./privacy" class="white burg_footer_link_2">Privacy
+                          Policy</a></li>
+                      <li>|</li>
+                      <li><a href="./faq" class="white burg_faq">FAQ</a></li>
+                      <li>|</li>
+                      <li><a href="./support" class="white burg_support">Support</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <p class="footer_copyright white">
+                  Copyright 2019.
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </article>
+  </main>
+  <div class="cookie hidden">
+    <div class="cookie_content">
+      <div class="text">
+        <p class="cookie_modal_comment">
+          This website uses cookies 🍪, please read more about <a href="./cookie">cookie policy here.</a>
+        </p>
+      </div>
+      <div class="cookie_toggle">
+        <img src="./img/svg/Cookie_remove.svg" alt="" />
+      </div>
     </div>
   </div>
-</div>
 
 </body>
 <script src="./js/main.js"></script>
